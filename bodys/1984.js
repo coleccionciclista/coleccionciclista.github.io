@@ -9,7 +9,7 @@ function bolsas1984(option) {
             // Contenido para la opción 1
             contentContainer.innerHTML = `
                 <h3>1984</h3>
-                <div class="image-container">s
+                <div class="image-container">
                 <img src= "bolsas/1984/IMG_20211022_194610.jpg" alt="Imagen 2">
                 <p> </p> 
                 </div>      
