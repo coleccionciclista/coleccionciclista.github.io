@@ -115,10 +115,12 @@ img {
         columns: 4; /* Divide la lista en dos columnas */
       webkit-columns: 4;
       moz-columns: 4;
+ margin-left:-8vw;
 }
 
 .menu-list li {
     padding: 10px;
+
 
 }
 
