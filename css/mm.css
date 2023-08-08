@@ -115,7 +115,7 @@ img {
         columns: 3; /* Divide la lista en dos columnas */
       webkit-columns: 4;
       moz-columns: 4;
- margin-left:-8vw;
+ margin-left:-70%;
 }
 
 .menu-list li {
