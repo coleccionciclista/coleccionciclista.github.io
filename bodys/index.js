@@ -9,7 +9,6 @@ function inicio(option) {
             // Contenido para la opción 1
             contentContainer.innerHTML = `
                
-           <h1>Bienvenido a la página</h1>
       
        
           <img class=" espacio" src="index/s1.jpg">
