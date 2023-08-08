@@ -113,8 +113,8 @@ img {
     padding: 0;
     margin: 0;
         columns: 3; /* Divide la lista en dos columnas */
-      webkit-columns: 4;
-      moz-columns: 4;
+      webkit-columns:3;
+      moz-columns: 3;
  margin-left:-70%;
 }
 
