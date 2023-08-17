@@ -1,0 +1,35 @@
+/* Styles for navigation buttons */
+#botonAnterior,
+#botonSiguiente {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#botonAnterior:hover,
+#botonSiguiente:hover {
+  background-color: #0056b3;
+}
+
+
+
+#Anterior,
+#Siguiente {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#Anterior:hover,
+#Siguiente:hover {
+  background-color: #0056b3;
+}
+

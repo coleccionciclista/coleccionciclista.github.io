@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Asegura que el contenido ocupe al menos la altura completa de la ventana */
+}
+
+.contenido {
+  padding: 20px;
+  flex: 1; /* Permite que el contenido ocupe el espacio restante */
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-text {
+  flex: 1;
+}
+
+.footer-image img {
+  max-width: 30%;
+  height: auto;
+}
+
+/* Sticky Footer */
+.footer {
+  margin-top: auto; /* Empuja el footer hacia la parte inferior */
+}
