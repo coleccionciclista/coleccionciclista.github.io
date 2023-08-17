@@ -62,7 +62,7 @@ nav ul li a:hover {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 /* Estilos para el menú desplegable en pantallas más pequeñas */
