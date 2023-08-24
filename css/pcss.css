@@ -4,6 +4,17 @@ body {
   font-family: Arial, sans-serif;
   width:100%;
 }
+body::-webkit-scrollbar{
+ 
+ 
+ background-color:white;
+}
+body::-webkit-scrollbar-thumb{
+ 
+ 
+ background-color:#2898ee;
+}
+
 
 header {
   background-color: #333;
@@ -73,5 +84,4 @@ img {
   width:73%;
   float:left;
 }
-
 
