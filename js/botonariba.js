@@ -5,9 +5,9 @@
 
   function showScrollButton() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("scrollBtn").style.display = "block";
+      document.getElementById("Siguiente").style.display = "block";
     } else {
-      document.getElementById("scrollBtn").style.display = "none";
+      document.getElementById("Siguiente").style.display = "none";
     }
   }
 
