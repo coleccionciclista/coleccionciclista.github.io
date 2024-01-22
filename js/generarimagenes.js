@@ -1,5 +1,12 @@
 const allImagesArray = [
+    //////// 2024 ////////////
+    { year: 2024, bolsa: "bolsas\\2024\\IMG_3906.png", equipo: "SABGAL ANICOLOR MUSETTE" },
+
     //////// 2023 ////////////
+
+    { year: 2023, bolsa: "bolsas\\2023\\ IMG_3910.png", equipo: "EQUIPO NACIONAL DE PORTUGAL MUSETTE" },
+    { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125711.jpg", equipo: "EF GIRO DE ITALIA TRASERA MUSETTE " },
+    { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125702.jpg", equipo: "EF GIRO DE ITALIA DELANTERA MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20231022173906.jpg", equipo: "LIDEL-TREK MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20231022173932.jpg", equipo: "TOUR OF QUIGHAI LAKE MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20231022174346.jpg", equipo: "BAHARAIN VICTORIOUS FRONTAL MUSETTE" },
@@ -173,7 +180,7 @@ const allImagesArray = [
     { year: 2021, bolsa: "bolsas\\2021\\IMG_20211030_120304.jpg", equipo: "GENERAL STORE CURIA ESSEGIBI MUSETTE" },
     { year: 2021, bolsa: "bolsas\\2021\\IMG_20211030_120342.jpg", equipo: "COLPACK BALLAN SABY MUSETTE" },
     { year: 2021, bolsa: "bolsas\\2021\\IMG_20220828_211941.jpg", equipo: "BAHRAIN VICTORIUS ALE MUSETTE" },
-    { year: 2021, bolsa: "bolsas\\2021\\IMG20221114164714.jpg", equipo: "In Emilia Romagna Cycling Team MUSETTE" },
+    { year: 2021, bolsa: "bolsas\\2021\\IMG20221114164714.jpg", equipo: "IN EMILIA ROMAGNA CYCLING TEAM MUSETTE" },
     { year: 2021, bolsa: "bolsas\\2021\\IMG20221114164728.jpg", equipo: "EF EDUCATION FIRST NIPPO GIRO DELANTERA MUSETTE" },
     { year: 2021, bolsa: "bolsas\\2021\\IMG20221114164735.jpg", equipo: "EF EDUCATION FIRST NIPPO GIRO TRASERA MUSETTE" },
     { year: 2021, bolsa: "bolsas\\2021\\IMG20221114164758.jpg", equipo: "ELKOV ELEKTRO KASPER MUSETTE" },
@@ -593,6 +600,10 @@ const allImagesArray = [
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20210611_181015.jpg", equipo: "GIANT ALPECIN MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20210611_181418.jpg", equipo: "TEAM UKYO MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20210611_181711.jpg", equipo: "COLOR CODE AQUALITY PROJECT MUSETTE" },
+    { year: 2015, bolsa: "bolsas\\2015\\IMG20231022173218.jpg", equipo: " CCC MUSETTE" },
+    { year: 2015, bolsa: "bolsas\\2015\\IMG20230620201245.jpg", equipo: "BARDIANI CSF MUSETTE" },
+    { year: 2015, bolsa: "bolsas\\2015\\IMG20230620201253.jpg", equipo: "TEAM SKY MUSETTE" },
+    { year: 2015, bolsa: "bolsas\\2015\\IMG20230620201443.jpg", equipo: "QHUBEKA  MUSETTE" },
 
     //////////////2014///////////////////////
     { year: 2014, bolsa: "bolsas\\2014\\IMG_20210611_183831.jpg", equipo: "EQUIPO NACIONAL DE FRANCIA  MUSETTE" },
@@ -834,8 +845,12 @@ const allImagesArray = [
     { year: 2007, bolsa: "bolsas\\2007\\IMG_20211030_160434.jpg", equipo: "SAUNIER DUVAL MUSETTE" },
 
     /////////////2006//////////// 
+
     { year: 2006, bolsa: "bolsas\\2006\\IMG20230620201116.jpg", equipo: "AGRITUBEL DELANTERA MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG20230620201120.jpg", equipo: "AGRITUBEL TRASERA MUSETTE" },
+    {
+        year: 2006, bolsa: "bolsas\\2006\\IMG_20220828_211706.jpg", equipo: "TEAM STOREZ V.C. Ath"
+    },
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20210611_175907.jpg", equipo: "VERMARC MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20211022_193706.jpg", equipo: "EQUIPO NACIONAL DE BELGICA MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20211022_194525.jpg", equipo: "JACQUES MUSETTE" },
@@ -945,6 +960,8 @@ const allImagesArray = [
     { year: 1997, bolsa: "bolsas\\1997\\IMG_20211022_213153.jpg", equipo: "MERCATONE UNO 2 MUSETTE" },
     { year: 1997, bolsa: "bolsas\\1997\\IMG_20211030_125102.jpg", equipo: "POLTI MUSETTE" },
     { year: 1997, bolsa: "bolsas\\1997\\IMG_20211022_213848.jpg", equipo: "RABOBANK MUSETTE" },
+    { year: 1997, bolsa: "bolsas\\1997\\IMG20240103125822.jpg", equipo: "RABOBANK MUSETTE" },
+    { year: 1997, bolsa: "bolsas\\1997\\IMG_3909.jpg", equipo: "SANTA CLARA MUSETTE" },
 
     /////////////1996////////////
     { year: 1996, bolsa: "bolsas\\1996\\IMG_20211022_202820.jpg", equipo: "TVM MUSETTE" },
@@ -1011,6 +1028,11 @@ const allImagesArray = [
     /////////////1989////////////
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20210611_182925.jpg", equipo: "VERYNET MUSETTE" },
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20211022_201951.jpg", equipo: "KELME-IBERIA-VARTA MUSETTE" },
+
+    { year: 1989, bolsa: "bolsas\\1989\\IMG_3911.png", equipo: "KELME-IBERIA-VARTA MUSETTE" },
+    { year: 1989, bolsa: "bolsas\\1989\\IMG_3907.jpg", equipo: "KELME-IBERIA-VARTA MUSETTE" },
+
+
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20211022_202841.jpg", equipo: "DOMEX EDDY MERCKX MUSETTE" },
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20211022_202933.jpg", equipo: "R.M.O MUSETTE" },
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20211022_203627.jpg", equipo: "CARRERA MUSETTE" },
@@ -1075,7 +1097,7 @@ function updateGallery(selectedYear) {
 
     imageGallery.innerHTML = '';
 
-    const filteredImagesyear = allImagesArray.filter(image => image.year.toString() === selectedYear);
+    const filteredImagesyear = allImagesArray.filter(image => image.year == selectedYear);
     const filteredImagesteam = allImagesArray.filter(image => image.equipo.includes(selectedYear));
 
 
