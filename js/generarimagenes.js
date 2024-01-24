@@ -4,7 +4,7 @@ const allImagesArray = [
 
     //////// 2023 ////////////
 
-    { year: 2023, bolsa: "bolsas\\2023\\ IMG_3910.png", equipo: "EQUIPO NACIONAL DE PORTUGAL MUSETTE" },
+    { year: 2023, bolsa: "bolsas\\2023\\ IMG_3910.jpg", equipo: "EQUIPO NACIONAL DE PORTUGAL MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125711.jpg", equipo: "EF GIRO DE ITALIA TRASERA MUSETTE " },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125702.jpg", equipo: "EF GIRO DE ITALIA DELANTERA MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20231022173906.jpg", equipo: "LIDEL-TREK MUSETTE" },
