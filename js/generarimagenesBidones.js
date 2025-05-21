@@ -316,7 +316,8 @@ const allImagesArray = [
     { year: 2024, bolsa: "bidones\\2024\\IMG_6137.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_6141.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_6503.jpg", equipo: "" },
-
+    //////////1978////////////////////
+    //////////1977////////////////////
     //////////1976////////////////////
     { year: 1976, bolsa: "bidones\\1976\\IMG20221229125604.jpg ", equipo: "" },
     { year: 1976, bolsa: "bidones\\1976\\IMG20221229125610.jpg", equipo: "" },
