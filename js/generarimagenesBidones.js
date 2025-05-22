@@ -317,13 +317,13 @@ const allImagesArray = [
     { year: 2024, bolsa: "bidones\\2024\\IMG_6141.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_6503.jpg", equipo: "" },
      //////////1984////////////////////
-   { year: 1984, bolsa: "bidones\\1980\\IMG20221230151446.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1980\\IMG20221230151450.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1980\\IMG20221230151454.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1980\\IMG20221230153355.jpg ", equipo: "" },
+   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151446.jpg ", equipo: "" },
+   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151450.jpg ", equipo: "" },
+   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151454.jpg ", equipo: "" },
+   { year: 1984, bolsa: "bidones\\1984\\IMG20221230153355.jpg ", equipo: "" },
      //////////1982////////////////////
-   { year: 1980, bolsa: "bidones\\1980\\IMG20221230150927.jpg ", equipo: "" },
-    { year: 1980, bolsa: "bidones\\1980\\IMG20221230150938.jpg ", equipo: "" },
+   { year: 1982, bolsa: "bidones\\1982\\IMG20221230150927.jpg ", equipo: "" },
+    { year: 1982, bolsa: "bidones\\1982\\IMG20221230150938.jpg ", equipo: "" },
     //////////1980////////////////////
     { year: 1980, bolsa: "bidones\\1980\\IMG20221229130126.jpg ", equipo: "" },
     { year: 1980, bolsa: "bidones\\1980\\IMG20221230150828.jpg ", equipo: "" },
