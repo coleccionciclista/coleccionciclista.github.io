@@ -124,7 +124,6 @@ const allImagesArray = [
     { year: 2024, bolsa: "bidones\\2024\\IMG_4816.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_4817.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_4818.jpg ", equipo: "" },
-    { year: 2024, bolsa: "bidones\\2024\\IMG_4819.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_4820.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_4821.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_4822.jpg ", equipo: "" },
@@ -316,25 +315,256 @@ const allImagesArray = [
     { year: 2024, bolsa: "bidones\\2024\\IMG_6137.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_6141.jpg ", equipo: "" },
     { year: 2024, bolsa: "bidones\\2024\\IMG_6503.jpg", equipo: "" },
-     //////////1984////////////////////
-   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151446.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151450.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1984\\IMG20221230151454.jpg ", equipo: "" },
-   { year: 1984, bolsa: "bidones\\1984\\IMG20221230153355.jpg ", equipo: "" },
-     //////////1982////////////////////
-   { year: 1982, bolsa: "bidones\\1982\\IMG20221230150927.jpg ", equipo: "" },
+
+    //////////2023////////////////////
+    { year: 2023, bolsa: "bidones\\2023\\.jpg", equipo: "" },
+    //////////2022////////////////////
+    { year: 2022, bolsa: "bidones\\2022\\.jpg", equipo: "" },
+    //////////2021////////////////////
+    { year: 2021, bolsa: "bidones\\2021\\.jpg", equipo: "" },
+    //////////2020////////////////////
+    { year: 2020, bolsa: "bidones\\2020\\.jpg", equipo: "" },
+    //////////2019////////////////////
+    { year: 2019, bolsa: "bidones\\2019\\.jpg", equipo: "" },
+    //////////2018////////////////////
+    { year: 2018, bolsa: "bidones\\2018\\.jpg", equipo: "" },
+    //////////2017////////////////////
+    { year: 2017, bolsa: "bidones\\2017\\.jpg", equipo: "" },
+    //////////2016////////////////////
+    { year: 2016, bolsa: "bidones\\2016\\.jpg", equipo: "" },
+    //////////2015////////////////////
+    { year: 2015, bolsa: "bidones\\2015\\.jpg", equipo: "" },
+    //////////2014////////////////////
+    { year: 2014, bolsa: "bidones\\2014\\.jpg", equipo: "" },
+    //////////2013////////////////////
+    { year: 2013, bolsa: "bidones\\2013\\.jpg", equipo: "" },
+    //////////2012////////////////////
+    { year: 2012, bolsa: "bidones\\2012\\.jpg", equipo: "" },
+    //////////2011////////////////////
+    { year: 2011, bolsa: "bidones\\2011\\.jpg", equipo: "" },
+    //////////2010////////////////////
+    { year: 2010, bolsa: "bidones\\2010\\.jpg", equipo: "" },
+    //////////2009////////////////////
+    { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
+    //////////2008////////////////////
+    { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
+    //////////2007////////////////////
+    { year: 2007, bolsa: "bidones\\2007\\.jpg", equipo: "" },
+    //////////2006////////////////////
+    { year: 2006, bolsa: "bidones\\2006\\.jpg", equipo: "" },
+    //////////2005////////////////////
+    { year: 2005, bolsa: "bidones\\2005\\.jpg", equipo: "" },
+    //////////2004////////////////////
+    { year: 2004, bolsa: "bidones\\2004\\.jpg", equipo: "" },
+    //////////2003////////////////////
+    { year: 2003, bolsa: "bidones\\2003\\.jpg", equipo: "" },
+    //////////2002////////////////////
+    { year: 2002, bolsa: "bidones\\2002\\.jpg", equipo: "" },
+    //////////2001////////////////////
+    { year: 2001, bolsa: "bidones\\2001\\.jpg", equipo: "" },
+    //////////2000////////////////////
+    { year: 2000, bolsa: "bidones\\2000\\.jpg", equipo: "" },
+    
+    //////////1999////////////////////
+    { year: 1999, bolsa: "bidones\\1999\\IMG_20220226_171348.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG_20220312_114631.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG_20220902_162520.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG_20221029_194959.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG20221230154231.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG20221231185342.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG20230611135537.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG20230611135626.jpg", equipo: "" },
+    { year: 1999, bolsa: "bidones\\1999\\IMG20231227131558.jpg", equipo: "" },
+
+    //////////1998////////////////////
+
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20220226_163323.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20220226_165701.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20220226_165708.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20220227_181938.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20220412_221645.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG_20221029_195027.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20221229125720.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20221229132223.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20221230151844.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20221231185335.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20230821113201.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20230821113205.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20230821113210.jpg", equipo: "" },
+    { year: 1998, bolsa: "bidones\\1998\\IMG20230821113216.jpg", equipo: "" },
+
+    //////////1997////////////////////
+
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220226_205807.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220227_135115.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220227_143221.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220227_184408.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220227_184418.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220312_113658.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220312_113713.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220422_190303.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220422_190319.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220422_190323.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220824_205034.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20220902_162514.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG_20221029_195544_1.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221229133754.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221229133800.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221231183235.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221231183242.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221231183245.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\IMG20221231183250\.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20221231185437.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20231227132156.jpg", equipo: "" },
+    { year: 1997, bolsa: "bidones\\1997\\IMG20231227132158.jpg", equipo: "" },
+
+
+    //////////1996////////////////////
+
+    { year: 1996, bolsa: "bidones\\1996\\IMG_20220824_205008.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG_20220824_205013.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG_20220824_205051.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG_20221029_195322.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG_20221029_195326_1.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG20221229132858.jpg", equipo: "" },
+    { year: 1996, bolsa: "bidones\\1996\\IMG20221231185249.jpg", equipo: "" },
+
+    //////////1995////////////////////
+    { year: 1995, bolsa: "bidones\\1995\\IMG_6074.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220227_134308.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220227_141519.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220227_182301.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220824_204954.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220824_204959.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220902_162602.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20220906_122130.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20221029_195033.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\.IMG_20221029_195426_1jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG_20221029_195432_1.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG20221230154342.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG20221230154430.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG20221231182357.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG20221231183329.jpg", equipo: "" },
+    { year: 1995, bolsa: "bidones\\1995\\IMG20221231185407.jpg", equipo: "" },
+
+    //////////1994////////////////////
+    { year: 1994, bolsa: "bidones\\1994\\IMG_20220902_162534.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG_20220902_162538.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221229132251.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221230152408.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221230154354.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221231182153.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221231182200.jpg", equipo: "" },
+    { year: 1994, bolsa: "bidones\\1994\\IMG20221231182346.jpg", equipo: "" },
+
+    //////////1993////////////////////
+
+    { year: 1993, bolsa: "bidones\\1993\\IMG_20220227_134137.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221229130249.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221230151155.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221231182132.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221231182138.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221231183216.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221231184156.jpg", equipo: "" },
+    { year: 1993, bolsa: "bidones\\1993\\IMG20221231184202.jpg", equipo: "" },
+
+    //////////1992////////////////////
+
+    { year: 1992, bolsa: "bidones\\1992\\IMG20221230154329.jpg", equipo: "" },
+    { year: 1992, bolsa: "bidones\\1992\\IMG20221231182039.jpg", equipo: "" },
+    { year: 1992, bolsa: "bidones\\1992\\IMG20221231182044.jpg", equipo: "" },
+    { year: 1992, bolsa: "bidones\\1992\\IMG20221231184115.jpg", equipo: "" },
+    { year: 1992, bolsa: "bidones\\1992\\IMG20221231184132.jpg", equipo: "" },
+
+    //////////1991////////////////////
+
+    { year: 1991, bolsa: "bidones\\1991\\IMG20221229131345.jpg", equipo: "" },
+    { year: 1991, bolsa: "bidones\\1991\\IMG20221230151952.jpg", equipo: "" },
+    { year: 1991, bolsa: "bidones\\1991\\IMG20221230152423.jpg", equipo: "" },
+    { year: 1991, bolsa: "bidones\\1991\\IMG20221231182558.jpg", equipo: "" },
+
+    //////////1990////////////////////
+
+    { year: 1990, bolsa: "bidones\\1990\\IMG20221231181757.jpg", equipo: "" },
+    { year: 1990, bolsa: "bidones\\1990\\IMG20221231182028.jpg", equipo: "" },
+    { year: 1990, bolsa: "bidones\\1990\\IMG20221231184009.jpg", equipo: "" },
+    { year: 1990, bolsa: "bidones\\1990\\IMG20221231184014.jpg", equipo: "" },
+
+
+    //////////1989////////////////////
+
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221231184302.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221229125643.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221229131200.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221229131658.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221230152453.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221231183953.jpg", equipo: "" },
+    { year: 1989, bolsa: "bidones\\1989\\IMG20221231184233.jpg", equipo: "" },
+
+    //////////1988////////////////////
+
+    { year: 1988, bolsa: "bidones\\1988\\IMG20221229125837.jpg", equipo: "" },
+    { year: 1988, bolsa: "bidones\\1988\\IMG20221229130201.jpg", equipo: "" },
+    { year: 1988, bolsa: "bidones\\1988\\IMG20221230151313.jpg", equipo: "" },
+    { year: 1988, bolsa: "bidones\\1988\\IMG20221230152655.jpg", equipo: "" },
+    { year: 1988, bolsa: "bidones\\1988\\IMG20221231183939.jpg", equipo: "" },
+    { year: 1988, bolsa: "bidones\\1988\\IMG20230611134054.jpg", equipo: "" },
+
+    //////////1987////////////////////
+    { year: 1987, bolsa: "bidones\\1987\\IMG20230504214441.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221229125958.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221229131747.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221229131758.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221230151915.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221230152144.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221230152153.jpg", equipo: "" },
+    { year: 1987, bolsa: "bidones\\1987\\IMG20221231183848.jpg", equipo: "" },
+    //////////1986////////////////////
+
+    { year: 1986, bolsa: "bidones\\1986\\IMG20221229132735.jpg ", equipo: "" },
+    { year: 1986, bolsa: "bidones\\1986\\IMG20221230151104.jpg ", equipo: "" },
+    { year: 1986, bolsa: "bidones\\1986\\IMG20221230153449.jpg ", equipo: "" },
+    { year: 1986, bolsa: "bidones\\1986\\IMG20221230154209.jpg ", equipo: "" },
+    { year: 1986, bolsa: "bidones\\1986\\IMG20221231184843.jpg", equipo: "" },
+
+    //////////1985////////////////////
+
+    { year: 1985, bolsa: "bidones\\1985\\IMG20221230150849.jpg ", equipo: "" },
+    { year: 1985, bolsa: "bidones\\1985\\IMG20221230150856.jpg ", equipo: "" },
+    { year: 1985, bolsa: "bidones\\1985\\IMG20221230150910.jpg ", equipo: "" },
+    { year: 1985, bolsa: "bidones\\1985\\IMG20221231183638.jpg ", equipo: "" },
+    { year: 1985, bolsa: "bidones\\1985\\IMG20221231183643.jpg ", equipo: "" },
+
+    //////////1984////////////////////
+
+    { year: 1984, bolsa: "bidones\\1984\\IMG20221230151446.jpg ", equipo: "" },
+    { year: 1984, bolsa: "bidones\\1984\\IMG20221230151450.jpg ", equipo: "" },
+    { year: 1984, bolsa: "bidones\\1984\\IMG20221230151454.jpg ", equipo: "" },
+    { year: 1984, bolsa: "bidones\\1984\\IMG20221230153355.jpg ", equipo: "" },
+
+    //////////1982////////////////////
+
+    { year: 1982, bolsa: "bidones\\1982\\IMG20221230150927.jpg ", equipo: "" },
     { year: 1982, bolsa: "bidones\\1982\\IMG20221230150938.jpg ", equipo: "" },
+
     //////////1980////////////////////
+
     { year: 1980, bolsa: "bidones\\1980\\IMG20221229130126.jpg ", equipo: "" },
     { year: 1980, bolsa: "bidones\\1980\\IMG20221230150828.jpg ", equipo: "" },
     { year: 1980, bolsa: "bidones\\1980\\IMG20221230152343.jpg ", equipo: "" },
+
     //////////1978////////////////////
+
     { year: 1978, bolsa: "bidones\\1978\\IMG20221231184817.jpg ", equipo: "" },
+
     //////////1977////////////////////
     //////////1976////////////////////
+
     { year: 1976, bolsa: "bidones\\1976\\IMG20221229125604.jpg ", equipo: "" },
     { year: 1976, bolsa: "bidones\\1976\\IMG20221229125610.jpg", equipo: "" },
+
     //////////1975////////////////////
+
     { year: 1975, bolsa: "bidones\\1975\\IMG20221229131251.jpg", equipo: "" },
 ];
 
