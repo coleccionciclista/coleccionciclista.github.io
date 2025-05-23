@@ -317,53 +317,53 @@ const allImagesArray = [
     { year: 2024, bolsa: "bidones\\2024\\IMG_6503.jpg", equipo: "" },
 
     //////////2023////////////////////
-    { year: 2023, bolsa: "bidones\\2023\\.jpg", equipo: "" },
+   // { year: 2023, bolsa: "bidones\\2023\\.jpg", equipo: "" },
     //////////2022////////////////////
-    { year: 2022, bolsa: "bidones\\2022\\.jpg", equipo: "" },
+   // { year: 2022, bolsa: "bidones\\2022\\.jpg", equipo: "" },
     //////////2021////////////////////
-    { year: 2021, bolsa: "bidones\\2021\\.jpg", equipo: "" },
+//{ year: 2021, bolsa: "bidones\\2021\\.jpg", equipo: "" },
     //////////2020////////////////////
-    { year: 2020, bolsa: "bidones\\2020\\.jpg", equipo: "" },
+  //  { year: 2020, bolsa: "bidones\\2020\\.jpg", equipo: "" },
     //////////2019////////////////////
-    { year: 2019, bolsa: "bidones\\2019\\.jpg", equipo: "" },
+//{ year: 2019, bolsa: "bidones\\2019\\.jpg", equipo: "" },
     //////////2018////////////////////
-    { year: 2018, bolsa: "bidones\\2018\\.jpg", equipo: "" },
+ //   { year: 2018, bolsa: "bidones\\2018\\.jpg", equipo: "" },
     //////////2017////////////////////
-    { year: 2017, bolsa: "bidones\\2017\\.jpg", equipo: "" },
+  //  { year: 2017, bolsa: "bidones\\2017\\.jpg", equipo: "" },
     //////////2016////////////////////
-    { year: 2016, bolsa: "bidones\\2016\\.jpg", equipo: "" },
+  //  { year: 2016, bolsa: "bidones\\2016\\.jpg", equipo: "" },
     //////////2015////////////////////
-    { year: 2015, bolsa: "bidones\\2015\\.jpg", equipo: "" },
+  //  { year: 2015, bolsa: "bidones\\2015\\.jpg", equipo: "" },
     //////////2014////////////////////
-    { year: 2014, bolsa: "bidones\\2014\\.jpg", equipo: "" },
+ //   { year: 2014, bolsa: "bidones\\2014\\.jpg", equipo: "" },
     //////////2013////////////////////
-    { year: 2013, bolsa: "bidones\\2013\\.jpg", equipo: "" },
+  //  { year: 2013, bolsa: "bidones\\2013\\.jpg", equipo: "" },
     //////////2012////////////////////
-    { year: 2012, bolsa: "bidones\\2012\\.jpg", equipo: "" },
+    //{ year: 2012, bolsa: "bidones\\2012\\.jpg", equipo: "" },
     //////////2011////////////////////
-    { year: 2011, bolsa: "bidones\\2011\\.jpg", equipo: "" },
+   // { year: 2011, bolsa: "bidones\\2011\\.jpg", equipo: "" },
     //////////2010////////////////////
-    { year: 2010, bolsa: "bidones\\2010\\.jpg", equipo: "" },
+   // { year: 2010, bolsa: "bidones\\2010\\.jpg", equipo: "" },
     //////////2009////////////////////
-    { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
+  //  { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
     //////////2008////////////////////
-    { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
+  //  { year: 2009, bolsa: "bidones\\2009\\.jpg", equipo: "" },
     //////////2007////////////////////
-    { year: 2007, bolsa: "bidones\\2007\\.jpg", equipo: "" },
+   // { year: 2007, bolsa: "bidones\\2007\\.jpg", equipo: "" },
     //////////2006////////////////////
-    { year: 2006, bolsa: "bidones\\2006\\.jpg", equipo: "" },
+   // { year: 2006, bolsa: "bidones\\2006\\.jpg", equipo: "" },
     //////////2005////////////////////
-    { year: 2005, bolsa: "bidones\\2005\\.jpg", equipo: "" },
+  //  { year: 2005, bolsa: "bidones\\2005\\.jpg", equipo: "" },
     //////////2004////////////////////
-    { year: 2004, bolsa: "bidones\\2004\\.jpg", equipo: "" },
+  //  { year: 2004, bolsa: "bidones\\2004\\.jpg", equipo: "" },
     //////////2003////////////////////
-    { year: 2003, bolsa: "bidones\\2003\\.jpg", equipo: "" },
+  //  { year: 2003, bolsa: "bidones\\2003\\.jpg", equipo: "" },
     //////////2002////////////////////
-    { year: 2002, bolsa: "bidones\\2002\\.jpg", equipo: "" },
+   // { year: 2002, bolsa: "bidones\\2002\\.jpg", equipo: "" },
     //////////2001////////////////////
-    { year: 2001, bolsa: "bidones\\2001\\.jpg", equipo: "" },
+  //  { year: 2001, bolsa: "bidones\\2001\\.jpg", equipo: "" },
     //////////2000////////////////////
-    { year: 2000, bolsa: "bidones\\2000\\.jpg", equipo: "" },
+//    { year: 2000, bolsa: "bidones\\2000\\.jpg", equipo: "" },
     
     //////////1999////////////////////
     { year: 1999, bolsa: "bidones\\1999\\IMG_20220226_171348.jpg", equipo: "" },
