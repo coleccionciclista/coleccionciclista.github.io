@@ -17,7 +17,7 @@
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
-             background-image: url('index/cGVn.webp');
+            background-image: url('index/cGVn.webp');
         }
 
         #container {
@@ -140,21 +140,32 @@
             color: green;
         }
 
-              #titulo {
-                size:5vh;
-            }
+        #buscadorHeader {
+            visibility: hidden;
+
+        }
+
+        #titulo {
+            size: 5vh;
+        }
+
         @media (max-width: 702px) {
             #titulo {
-                font-size:4vh;
-            }}
-              @media (min-width: 702px) {
+                font-size: 4vh;
+            }
+        }
+
+        @media (min-width: 702px) {
             #titulo {
-                font-size:5vh;
-            }}
-         @media (max-width: 426px) {
+                font-size: 5vh;
+            }
+        }
+
+        @media (max-width: 426px) {
             #titulo {
-                font-size:3vh;
-            }}
+                font-size: 3vh;
+            }
+        }
     </style>
 </head>
 
@@ -186,11 +197,11 @@
                     </li>
                 </ul>
 
-                <div id="buscadorHeader" >
-                    <form id="fbHeader" class="d-flex" role="search" >
-                        <input  class="form-control me-2" type="search" placeholder="Equipo / año" aria-label="Search"
+                <div id="buscadorHeader">
+                    <form id="fbHeader" class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Equipo / año" aria-label="Search"
                             id="buscador">
-                        <button  class="btn btn-outline-success" type="button"
+                        <button class="btn btn-outline-success" type="button"
                             onclick="visualizarBucadores();recogervalor();">Search</button>
                     </form>
                 </div>
@@ -198,7 +209,7 @@
         </div>
     </nav>
 
-   <p id="titulo" style="color: black;visibility:visible;text-align:center;margin-top:30vh;"> SELECCIONA UN AÑO
+    <p id="titulo" style="color: black;visibility:visible;text-align:center;margin-top:30vh;"> SELECCIONA UN AÑO
         O BUSCA UN EQIPO
 
 
@@ -207,9 +218,9 @@
         <form class="d-flex" role="search" style="width: 70%;height:100%;">
             <input class="form-control me-2" type="search" placeholder="Equipo / año" aria-label="Search" id="buscador"
                 style="size:40vw;">
-            <button  class="btn btn-success" type="button" onclick="visualizarBucadores();recogervalor();"
+            <button class="btn btn-success" type="button" onclick="visualizarBucadores();recogervalor();"
                 style="width:20vw; "> Search</button>
-                
+
         </form>
     </div>
 
@@ -222,7 +233,7 @@
 
     <!-- Modal para mostrar la imagen ampliada -->
     <div class="zoomed" id="zoomedContainer">
-        <img id="zoomedImage" alt="Imagen Ampliada" src="" > 
+        <img id="zoomedImage" alt="Imagen Ampliada" src="">
     </div>
 
 
