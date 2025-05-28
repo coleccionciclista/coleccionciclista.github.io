@@ -4,7 +4,7 @@ const allImagesArray = [
 
     //////// 2023 ////////////
 
-    { year: 2023, bolsa: "bolsas\\2023\\ IMG_3910.jpg", equipo: "EQUIPO NACIONAL DE PORTUGAL MUSETTE" },
+    { year: 2023, bolsa: "bolsas\\2023\\IMG_3910.jpg", equipo: "EQUIPO NACIONAL DE PORTUGAL MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125711.jpg", equipo: "EF GIRO DE ITALIA TRASERA MUSETTE " },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20240103125702.jpg", equipo: "EF GIRO DE ITALIA DELANTERA MUSETTE" },
     { year: 2023, bolsa: "bolsas\\2023\\IMG20231022173906.jpg", equipo: "LIDEL-TREK MUSETTE" },
@@ -1159,18 +1159,15 @@ function updateGallery(selectedYear) {
     }
 }
 
+function visualizarBucadores() {
+      document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
+    document.getElementById('buscadorbody').style.visibility = 'hidden';   // Oculta
+  
+}
 
 
-yearDropdown.addEventListener('change', function () {
-    const selectedYear = yearDropdown.value;
-    updateGallery(selectedYear);
-});
 
 // Cierra el zoom al hacer clic fuera de la imagen
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
-
-updateGallery(yearDropdown.value);
-
-updateGallery(yearDropdown.value);
