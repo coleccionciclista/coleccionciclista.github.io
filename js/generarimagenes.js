@@ -1,3 +1,5 @@
+
+
 const allImagesArray = [
     //////// 2025 ////////////
     { year: 2025, bolsa: "bolsas\\2025\\IMG_5904.jpg", equipo: " MUSETTE" },
@@ -1320,13 +1322,13 @@ function updateGallery(selectedYear) {
 
 function visualizarBucadores() {
     document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
-    document.getElementById('buscadorbody').style.visibility = 'hidden';   // Oculta
+
 
 }
-
-
 
 // Cierra el zoom al hacer clic fuera de la imagen
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
+

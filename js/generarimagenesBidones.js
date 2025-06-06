@@ -71,6 +71,38 @@ const allImagesArray = [
     { year: 2025, bidon: "bidones\\2025\\IMG_6559.jpg ", equipo: "BEPINK - IMATRA - BONGIOANNI CARA 2" },
     { year: 2025, bidon: "bidones\\2025\\IMG_6560.jpg ", equipo: "Q36.5 PRO CYCLING TEAM" },
     { year: 2025, bidon: "bidones\\2025\\IMG_6561.jpg", equipo: "Q36.5 PRO CYCLING TEAM CARA 2" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6581.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6582.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6583.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6584.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6585.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6586.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6587.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6588.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6589.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6590.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6591.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6592.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6593.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6594.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6595.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6596.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6597.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6598.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6599.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6600.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6601.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6602.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6603.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6604.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6605.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6607.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6608.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6630.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6631.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6632.jpg", equipo: "" },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6633.jpg", equipo: "" },
+
     //////// 2024 ////////////
     //Anicolor /Equipo de ciclismo Tien21
 
@@ -2673,7 +2705,7 @@ const allImagesArray = [
 
     //////////1993////////////////////
 
-    { year: 1993, bidon: "bidones\\1993\\IMG_20220227_134137.jpg",equipo: ""},
+    { year: 1993, bidon: "bidones\\1993\\IMG_20220227_134137.jpg", equipo: "" },
     { year: 1993, bidon: "bidones\\1993\\IMG20221229130249.jpg", equipo: "" },
     { year: 1993, bidon: "bidones\\1993\\IMG20221230151155.jpg", equipo: "" },
     { year: 1993, bidon: "bidones\\1993\\IMG20221231182132.jpg", equipo: "" },
@@ -2887,8 +2919,7 @@ function cerrarAlClick(event) {
 }
 document.getElementById('zoomedContainer').addEventListener('click', cerrarAlClick);
 function visualizarBucadores() {
-      document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
-    document.getElementById('buscadorbody').style.visibility = 'hidden';   // Oculta
-  
+    document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
+
 }
 
