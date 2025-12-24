@@ -1223,7 +1223,7 @@ const allImagesArray = [
     ////////////////1984///////////
     { year: 1984, bolsa: "bolsas\\1984\\IMG_20211022_194610.jpg", equipo: "ISOSTAR MUSETTE" },
     ////////////////1978///////////
-    { year: 1978, bolsa: "bolsas\\1978\\1647032676326.jpg", equipo: " D´ALESSANDRO TUBOLARI KAS MUSETTE" },
+    { year: 1978, bolsa: "bolsas\\1978\\1647032676326.webp", equipo: " D´ALESSANDRO TUBOLARI KAS MUSETTE" },
 ];
 $(document).ready(function () {
     $("p").css("display", "block");
