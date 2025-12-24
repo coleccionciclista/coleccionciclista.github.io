@@ -1190,7 +1190,7 @@ const allImagesArray = [
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20210611_182925.webp", equipo: "VERYNET MUSETTE" },
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20211022_201951.webp", equipo: "KELME-IBERIA-VARTA MUSETTE" },
 
-    { year: 1989, bolsa: "bolsas\\1989\\IMG_3911.png", equipo: "KELME-IBERIA-VARTA MUSETTE" },
+    { year: 1989, bolsa: "bolsas\\1989\\IMG_3911.webp", equipo: "KELME-IBERIA-VARTA MUSETTE" },
     { year: 1989, bolsa: "bolsas\\1989\\IMG_3907.webp", equipo: "KELME-IBERIA-VARTA MUSETTE" },
 
 
