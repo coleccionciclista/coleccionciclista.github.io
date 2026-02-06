@@ -688,7 +688,7 @@ const allImagesArray = [
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_180307.webp", equipo: "TOPSPORT VLAANDEREN BALOISE 1 MUSETTE" },
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_180636.webp", equipo: "TREK SEGAFREDO MUSETTE" },
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_181022.webp", equipo: "IAM WINFORCE MUSETTE" },
-    { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_181328 (3).webp", equipo: "ARMEE DE TERRE MUSETTE" },
+    { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_181328.webp", equipo: "ARMEE DE TERRE MUSETTE" },
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_182023.webp", equipo: "LEOPARD TRASERA MUSETTE" },
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_182027.webp", equipo: "LEOPARD DELANTERA MUSETTE" },
     { year: 2016, bolsa: "bolsas\\2016\\IMG_20210611_183049.webp", equipo: "WILLEMS CRELAN MUSETTE" },
@@ -1337,5 +1337,6 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
