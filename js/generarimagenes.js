@@ -1082,7 +1082,7 @@ const allImagesArray = [
     { year: 2001, bolsa: "bolsas\\2001\\IMG_20211030_125725.webp", equipo: "CANTINATOLLO MUSETTE" },
     { year: 2001, bolsa: "bolsas\\2001\\IMG_20211030_153542.webp", equipo: "COCACOLA DOMO MUSETTE" },
     { year: 2001, bolsa: "bolsas\\2001\\IMG20230620200516.webp", equipo: "MAPEI MUSETTE" },
-    { year: 2001, bolsa: "bolsas\\2001\\IMG_20210611_180722 (2).webp", equipo: "UNITED STATES POSTAL SERVICE MUSETTE" },
+    { year: 2001, bolsa: "bolsas\\2001\\IMG_20210611_180722.webp", equipo: "UNITED STATES POSTAL SERVICE MUSETTE" },
     { year: 2001, bolsa: "bolsas\\2001\\IMG_20210611_180943.webp", equipo: " COAST MUSETTE" },
     { year: 2001, bolsa: "bolsas\\2001\\IMG_20210611_182509.webp", equipo: "WIESENHOF MUSETTE" },
     { year: 2001, bolsa: "bolsas\\2001\\IMG_20211022_202456.webp", equipo: "FESTINA MUSETTE" },
@@ -1337,6 +1337,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
