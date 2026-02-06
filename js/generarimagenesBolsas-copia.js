@@ -389,7 +389,7 @@ const allImagesArray = [
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_203517.webp", equipo: " NOVO NORDISK TRASERA MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_203806.webp", equipo: "VINI ZABU KTM DELANTERA MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_203817.webp", equipo: "VINI ZABU KTM TRASERA MUSETTE" },
-    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_204004.webp", equipo: "RALLY CHAMOIS BUTT MUSETTE" },
+    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_204004 - copia.webp", equipo: "RALLY CHAMOIS BUTT MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_204016.webp", equipo: "RALLY CHAMOIS BUTT MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_204023.webp", equipo: "RALLY CHAMOIS BUTT MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_205820.webp", equipo: "KOMETA MUSETTE" },
@@ -402,9 +402,9 @@ const allImagesArray = [
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214233.webp", equipo: "BURGOS BH MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214252.webp", equipo: "BURGOS BH MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214259.webp", equipo: "BURGOS BH MUSETTE" },
-    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214357.webp", equipo: "INEOS 3 MUSETTE" },
-    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214406.webp", equipo: "INEOS 1 MUSETTE" },
-    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214413.webp", equipo: "INEOS 2 MUSETTE" },
+    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214357 - copia.webp", equipo: "INEOS 3 MUSETTE" },
+    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214406 - copia.webp", equipo: "INEOS 1 MUSETTE" },
+    { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214413 - copia.webp", equipo: "INEOS 2 MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_214925.webp", equipo: "TOTAL DIRECT ENERGIE MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_215420.webp", equipo: "TEAM SUNWEB MUSETTE" },
     { year: 2020, bolsa: "bolsas\\2020\\IMG_20211022_215508.webp", equipo: "EFAPEL PRIO MUSETTE" },
@@ -588,10 +588,10 @@ const allImagesArray = [
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_194338.webp", equipo: "FORTUNEO SAMSIC BANQUE TOUR 1 MUSETTE" },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_194347.webp", equipo: "FORTUNEO SAMSIC BANQUE 2 MUSETTE " },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_194824.webp", equipo: "CORENDON CIRCUS" },
-    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195029.webp", equipo: "EUSKADI MURIAS GORBEIA VUELTA ESPAÑA DELANTERA MUSETTE" },
-    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195041.webp", equipo: "EUSKADI MURIAS GORBEIA MUSETTE" },
+    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195029 - copia.webp", equipo: "EUSKADI MURIAS GORBEIA VUELTA ESPAÑA DELANTERA MUSETTE" },
+    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195041 - copia.webp", equipo: "EUSKADI MURIAS GORBEIA MUSETTE" },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195050.webp", equipo: "EUSKADI MURIAS GORBEIA VUELTA ESPAÑA TRASERA MUSETTE" },
-    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195126.webp", equipo: "EUSKADI MURIAS DURANGO WOMEN MUSETTE" },
+    { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195126 - copia.webp", equipo: "EUSKADI MURIAS DURANGO WOMEN MUSETTE" },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195209.webp", equipo: "DELKO MARSEILLE PROVENCE POLI DELANTERA MUSETTE" },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_195220.webp", equipo: "DELKO MARSEILLE PROVENCE POLI TRASERA MUSETTE" },
     { year: 2018, bolsa: "bolsas\\2018\\IMG_20211022_200303.webp", equipo: "MOVISTAR CANYON MUSETTE" },
@@ -614,7 +614,6 @@ const allImagesArray = [
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_181521.webp", equipo: "TRIMTEX SPAREBANKEN MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_182458.webp", equipo: "TRW WALLONIE FIDEA AGO MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_182945.webp", equipo: "ALDRO MUSETE" },
-
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_183058.webp", equipo: "AUBER 93 DMTEX MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_183106.webp", equipo: "DOLTCINI VERANCLASSIC AGO MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20210611_183357.webp", equipo: "JLT CONDOR SECRET TRAINING MUSETE" },
@@ -627,7 +626,6 @@ const allImagesArray = [
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_195255.webp", equipo: "DELKO MARSEILLE POLI TRASERA MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_200348.webp", equipo: " MOVISTAR MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_200415.webp", equipo: "LARES DOLTCINI MARLUX MUSETE" },
-
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_200923.webp", equipo: "CYCLING ACADEMY ISRAEL MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_201027.webp", equipo: "UAE EMIRATES 1 MUSETE" },
     { year: 2017, bolsa: "bolsas\\2017\\IMG_20211022_201034.webp", equipo: "UAE EMIRATES 2 MUSETE" },
@@ -861,8 +859,8 @@ const allImagesArray = [
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_182231.webp", equipo: "ROUBAIX MUSETTE" },
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_182546.webp", equipo: "AA DRINK MUSETTE" },
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_182935.webp", equipo: "AA DRINK MUSETTE" },
-    { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_183924.webp", equipo: "EQUIPO NACIONAL DE GRAN BRETRAÑA TRASERA MUSETTE" },
-    { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_183930.webp", equipo: "EQUIPO NACIONAL DE GRAN BRETRAÑA DELANTERA MUSETTE" },
+    { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_183924 - copia.webp", equipo: "EQUIPO NACIONAL DE GRAN BRETRAÑA TRASERA MUSETTE" },
+    { year: 2012, bolsa: "bolsas\\2012\\IMG_20210611_183930 - copia.webp", equipo: "EQUIPO NACIONAL DE GRAN BRETRAÑA DELANTERA MUSETTE" },
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20211022_194138.webp", equipo: "VACANSOLEIL TRASERA MUSETTE" },
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20211022_194145.webp", equipo: "VACANSOLEIL DELANTERA MUSETTE" },
     { year: 2012, bolsa: "bolsas\\2012\\IMG_20211022_194635.webp", equipo: "SUNWEB MUSETTE" },
@@ -1231,111 +1229,100 @@ $(document).ready(function () {
     $("p").css("display", "block");
 });
 
-// Anular evento de enter en formulario
+// anular evento de enter en formulario
 $('input').keypress(function (e) {
     if (e.which == 13) {
         return false;
     }
 });
+function recogervalor() {
+    const selectedYear2 = document.getElementById('buscador').value;
+    selectedYear = selectedYear2.toString();
+    selectedYear = selectedYear.toUpperCase();
+    // alert(selectedYear);
+    updateGallery(selectedYear);
+}
 
+
+
+
+
+const yearDropdown = document.getElementById('yearDropdown');
 const imageGallery = document.getElementById('image-gallery');
 const zoomedContainer = document.getElementById('zoomedContainer');
 const zoomedImage = document.getElementById('zoomedImage');
 
-function recogervalor() {
-    const loader = document.getElementById('loader');
-    const gallery = document.getElementById('image-gallery');
-
-    // 1. Mostrar spinner y limpiar/ocultar galería
-    if (loader) loader.style.display = 'block';
-    gallery.style.opacity = '0.3'; // La dejamos translúcida mientras carga
-
-    const selectedYear2 = document.getElementById('buscador').value;
-    let selectedYear = selectedYear2.toString().toUpperCase();
-
-    // 2. Simulamos la "precarga".
-    // En lugar de 30 segundos (que es demasiado), pondremos unos 2-3 segundos
-    // que es suficiente para que el navegador procese el lazy loading.
-    setTimeout(() => {
-        updateGallery(selectedYear);
-
-        if (loader) loader.style.display = 'none';
-        gallery.style.opacity = '1'; // Restauramos la visibilidad
-
-        // Opcional: Scroll automático al inicio de la galería tras cargar
-        gallery.scrollIntoView({ behavior: 'smooth' });
-    }, 10000); // 2000 milisegundos = 2 segundos. Cámbialo si quieres más.
-}
 
 function updateGallery(selectedYear) {
-    // Ocultar párrafos iniciales y limpiar galería
     $("p").css("display", "none");
+
     imageGallery.innerHTML = '';
 
-    // 2. MEJORA: Filtro Único (Evita que las imágenes salgan repetidas si el año está en el nombre del equipo)
-    const filteredImages = allImagesArray.filter(image =>
-        image.year.toString() === selectedYear ||
-        image.equipo.toUpperCase().includes(selectedYear)
-    );
+    const filteredImagesyear = allImagesArray.filter(image => image.year == selectedYear);
+    const filteredImagesteam = allImagesArray.filter(image => image.equipo.includes(selectedYear));
+        filteredImagesyear.forEach(image => {
 
-    // 3. MEJORA: DocumentFragment (Carga masiva mucho más rápida)
-    const fragment = document.createDocumentFragment();
-
-    filteredImages.forEach(image => {
         const cardElement = document.createElement('div');
         cardElement.className = 'image-card';
 
-        const pictureElement = document.createElement('picture');
-        const sourceElement = document.createElement('source');
-
-        // Detectar si el objeto usa 'bolsa' o 'bidon' automáticamente
-        const rutaImagen = image.bolsa || image.bidon;
-
-        sourceElement.srcset = rutaImagen;
-        sourceElement.type = 'image/webp';
-
         const imgElement = document.createElement('img');
-        imgElement.src = rutaImagen.replace('.webp', '.jpg');
-        imgElement.alt = `Equipo: ${image.equipo}`;
-
-        // 4. MEJORA: Lazy Loading (Solo descarga lo que el usuario ve)
-        imgElement.loading = 'lazy';
-        imgElement.decoding = 'async'; // Procesa la imagen sin bloquear la web
-
-        pictureElement.appendChild(sourceElement);
-        pictureElement.appendChild(imgElement);
+        imgElement.src = image.bolsa;
+        imgElement.alt = `Año ${selectedYear}`;
 
         const textElement = document.createElement('p');
         textElement.textContent = `${image.equipo} ${image.year}`;
 
-        cardElement.appendChild(pictureElement);
+        cardElement.appendChild(imgElement);
         cardElement.appendChild(textElement);
+        imageGallery.appendChild(cardElement);
 
-        // Zoom al hacer clic
+        // Agrega un evento clic para hacer zoom
         cardElement.addEventListener('click', () => {
-            zoomedImage.src = rutaImagen;
-            zoomedImage.alt = image.equipo;
+            zoomedImage.src = image.bolsa;
+            zoomedImage.alt = `Año ${selectedYear}`;
             zoomedContainer.style.display = 'flex';
         });
-
-        fragment.appendChild(cardElement);
     });
+    try {
+        // Tu código para generar imágenes
 
-    // 5. MEJORA: Inserción única al DOM
-    imageGallery.appendChild(fragment);
+        filteredImagesteam.forEach(image => {
+            const cardElement = document.createElement('div');
+            cardElement.className = 'image-card';
 
-    // Si no hay resultados, avisar al usuario
-    if (filteredImages.length === 0 && selectedYear !== "") {
-        imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron imágenes para esa búsqueda.</p>';
+            const imgElement = document.createElement('img');
+            imgElement.src = image.bolsa;
+            imgElement.alt = `Año ${selectedYear}`;
+
+            const textElement = document.createElement('p');
+            textElement.textContent = `${image.equipo} ${image.year}`;
+
+
+            cardElement.appendChild(imgElement);
+            cardElement.appendChild(textElement);
+            imageGallery.appendChild(cardElement);
+
+            // Agrega un evento clic para hacer zoom
+            cardElement.addEventListener('click', () => {
+                zoomedImage.src = image.bolsa;
+                zoomedImage.alt = `Año ${selectedYear}`;
+                zoomedContainer.style.display = 'flex';
+            });
+        });
+    } catch (error) {
+        console.error('Error al generar imágenes:', error);
     }
 }
 
 function visualizarBucadores() {
-    const buscador = document.getElementById('buscadorHeader');
-    if(buscador) buscador.style.visibility = 'visible';
+    document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
+
+
 }
 
-// Cierra el zoom
+// Cierra el zoom al hacer clic fuera de la imagen
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
+

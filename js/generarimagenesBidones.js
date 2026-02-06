@@ -2845,68 +2845,48 @@ const zoomedImage = document.getElementById('zoomedImage');
 
 function updateGallery(selectedYear) {
     $("p").css("display", "none");
-
     imageGallery.innerHTML = '';
 
     const filteredImagesyear = allImagesArray.filter(image => image.year == selectedYear);
     const filteredImagesteam = allImagesArray.filter(image => image.equipo.includes(selectedYear));
 
-
-    filteredImagesyear.forEach(image => {
-
-        const cardElement = document.createElement('div');
-        cardElement.className = 'image-card';
-
-        const imgElement = document.createElement('img');
-        imgElement.src = image.bidon;
-        imgElement.alt = `Año ${selectedYear}`;
-
-        const textElement = document.createElement('p');
-        textElement.textContent = `${image.equipo} ${image.year}`;
-
-        cardElement.appendChild(imgElement);
-        cardElement.appendChild(textElement);
-        imageGallery.appendChild(cardElement);
-
-        // Agrega un evento clic para hacer zoom
-        cardElement.addEventListener('click', () => {
-            zoomedImage.src = image.bidon;
-            zoomedImage.alt = `Año ${selectedYear}`;
-            zoomedContainer.style.display = 'flex';
-        });
-    });
-    try {
-
-        // Tu código para generar imágenes
-
-        filteredImagesteam.forEach(image => {
+    const loadImages = (images) => {
+        images.forEach(image => {
             const cardElement = document.createElement('div');
             cardElement.className = 'image-card';
 
+            const pictureElement = document.createElement('picture');
+
+            const sourceElement = document.createElement('source');
+            sourceElement.srcset = image.bolsa; // WebP
+            sourceElement.type = 'image/webp';
+
             const imgElement = document.createElement('img');
-            imgElement.src = image.bidon;
+            imgElement.src = image.bolsa.replace('.webp', '.jpg'); // Fallback JPG
             imgElement.alt = `Año ${selectedYear}`;
+            imgElement.loading = 'lazy';
+
+            pictureElement.appendChild(sourceElement);
+            pictureElement.appendChild(imgElement);
 
             const textElement = document.createElement('p');
             textElement.textContent = `${image.equipo} ${image.year}`;
 
-
-            cardElement.appendChild(imgElement);
+            cardElement.appendChild(pictureElement);
             cardElement.appendChild(textElement);
             imageGallery.appendChild(cardElement);
 
-            // Agrega un evento clic para hacer zoom
             cardElement.addEventListener('click', () => {
-                zoomedImage.src = image.bidon;
+                zoomedImage.src = imgElement.src; // Usa el fallback (JPG)
                 zoomedImage.alt = `Año ${selectedYear}`;
                 zoomedContainer.style.display = 'flex';
             });
         });
-    } catch (error) {
-        console.error('Error al generar imágenes:', error);
-    }
-}
+    };
 
+    loadImages(filteredImagesyear);
+    loadImages(filteredImagesteam);
+}
 
 
 // Cierra el zoom al hacer clic fuera de la imagen
