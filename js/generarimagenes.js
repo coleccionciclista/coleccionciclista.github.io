@@ -1129,7 +1129,7 @@ const allImagesArray = [
     { year: 1996, bolsa: "bolsas\\1996\\IMG20230620200441.webp", equipo: "SCRIGNO MUSETTE" },
     { year: 1996, bolsa: "bolsas\\1996\\IMG20231022172409.webp", equipo: "MOBILVETTA REFIN MUSETTE" },
     { year: 1996, bolsa: "bolsas\\1996\\IMG_20211022_194243.webp", equipo: "AKI GIPIEMME MUSETTE" },
-    { year: 1996, bolsa: "bolsas\\1996\\IMG_5166.webp", equipo: "tvm extran MUSETTE" },
+    { year: 1996, bolsa: "bolsas\\1996\\IMG_20211022_202820.webp", equipo: "tvm extran MUSETTE" },
 
     /////////////1995////////////
 
@@ -1337,4 +1337,5 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
