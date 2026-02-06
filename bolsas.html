@@ -159,13 +159,41 @@
             #titulo {
                 font-size:3vh;
             }}
-            
+
+            .lds-roller {
+              display: inline-block;
+              position: relative;
+              width: 80px;
+              height: 80px;
+            }
+            .lds-roller div {
+              animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+              transform-origin: 40px 40px;
+            }
+            .lds-roller div:after {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background: #fff; /* Color de los puntos */
+              margin: -4px 0 0 -4px;
+            }
+            /* ... (Animación simplificada para el ejemplo) ... */
+            @keyframes lds-roller {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+
+            #image-gallery {
+                transition: opacity 0.5s ease;
+            }
+
     </style>
 </head>
 
 <body>
-
-
 
     <nav class="navbar navbar-expand-lg " style="background-color: rgb(44, 44, 44);">
         <div class="container-fluid">
@@ -198,6 +226,15 @@
         </div>
     </nav>
 
+
+    <div id="loader" style="display:none; text-align:center; padding: 50px;">
+    <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    <p style="color: white; font-weight: bold; margin-top: 20px;">Loading Musettes...</p>
+</div>
+
+
+
+
     <div id="container" onload="recogervalor()">
         <div id="image-gallery">
         </div>
@@ -205,7 +242,7 @@
     <!-- volver arriva-->
     <button onclick="scrollToTop()" id="Siguiente" title="Ir arriba">↑</button>
 
-    <!-- Modal para mostrar la imagen ampliada -->
+    <!--  mostrar la imagen ampliada -->
     <div class=" zoomed" id="zoomedContainer">
         <img id="zoomedImage" alt="Imagen Ampliada">
     </div>
