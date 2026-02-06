@@ -729,7 +729,7 @@ const allImagesArray = [
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_195144.webp", equipo: " MARSEILLE13 DELANTERA MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_195155.webp", equipo: " MARSEILLE13 TRASERA MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_200832.webp", equipo: "TEAM VIRARLBERG MUSETTE" },
-    { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_201354 (2).webp", equipo: "ETIXX QUICK STEPS MUSETTE" },
+    { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_201354.webp", equipo: "ETIXX QUICK STEPS MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_201806.webp", equipo: "TEAM COOP MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_202558.webp", equipo: "RUSVELO MUSETTE" },
     { year: 2015, bolsa: "bolsas\\2015\\IMG_20211022_204656.webp", equipo: "FDJ MUSETTE" },
@@ -879,7 +879,7 @@ const allImagesArray = [
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_180658.webp", equipo: "RADIOSHACK MUSETTE" },
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_180833.webp", equipo: "COLOMBIA ES PASION MUSETTE" },
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_181144.webp", equipo: "HTC MUSETTE" },
-    { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_181832 (2).webp", equipo: "CAJA RURAL WCUP BORN ESPAÑA MUSETTE" },
+    { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_181832.webp", equipo: "CAJA RURAL WCUP BORN ESPAÑA MUSETTE" },
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20210611_182222.webp", equipo: "LEOPARD TREK MUSETTE" },
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20211022_194103.webp", equipo: "VACANSOLEIL DCM TOUR TRASERA MUSETTE" },
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20211022_194138.webp", equipo: "VACANSOLEIL DCM TOUR DELANTERA MUSETTE" },
@@ -896,7 +896,7 @@ const allImagesArray = [
     { year: 2011, bolsa: "bolsas\\2011\\IMG_20211030_153652.webp", equipo: "ANDALUCIA TRASERA MUSETTE" },
 
     /////////////2010////////////
-    { year: 2010, bolsa: "bolsas\\2010\\IMG_20211022_214122 (2).webp", equipo: "BURGOS MUSETTE" },
+    { year: 2010, bolsa: "bolsas\\2010\\IMG_20211022_214122.webp", equipo: "BURGOS MUSETTE" },
     { year: 2010, bolsa: "bolsas\\2010\\IMG_20211022_214456.webp", equipo: "SKY DELANTERA MUSETTE" },
     { year: 2010, bolsa: "bolsas\\2010\\IMG_20211022_214504.webp", equipo: "SKY TRASERA MUSETTE" },
     { year: 2010, bolsa: "bolsas\\2010\\IMG_20211022_214712.webp", equipo: "QUICK STEP MUSETTE" },
@@ -942,8 +942,8 @@ const allImagesArray = [
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_121949.webp", equipo: "AG2R MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_122033.webp", equipo: "AG2R MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_150727.webp", equipo: "LOTTO SILENCE MUSETTE" },
-    { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_155025 - copia (2).webp", equipo: "ANDALUCIA 1 MUSETTE" },
-    { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_155057 - copia.webp", equipo: "ANDALUCIA 2 MUSETTE" },
+    { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_155025.webp", equipo: "ANDALUCIA 1 MUSETTE" },
+    { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_155057.webp", equipo: "ANDALUCIA 2 MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_155144.webp", equipo: "ASTANA MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_160544.webp", equipo: "KATIOWA MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG20230620201859.webp", equipo: "FRANCAISE DES JEUX MUSETTE" },
@@ -1337,6 +1337,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
