@@ -948,9 +948,9 @@ const allImagesArray = [
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20211030_160544.webp", equipo: "KATIOWA MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG20230620201859.webp", equipo: "FRANCAISE DES JEUX MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG20230620202047.webp", equipo: "LOTTO SILENCE MUSETTE" },
-    { year: 2009, bolsa: "bolsas\\2009\\bmc (2).webp", equipo: "BMC RACING TEAM DELANTERA  MUSETTE" },
+    { year: 2009, bolsa: "bolsas\\2009\\bmc_1.webp", equipo: "BMC RACING TEAM DELANTERA MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\bmc.webp", equipo: "BMC RACING TEAM TRASERA MUSETTE" },
-    { year: 2009, bolsa: "bolsas\\2009\\IMG_20210611_175711.webp", equipo: "SAXO BANK  MUSETTE" },
+    { year: 2009, bolsa: "bolsas\\2009\\IMG_20210611_175711.webp", equipo: "SAXO BANK MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20210611_180300.webp", equipo: "TOPSPORT VLAANDEREN MUSETTE" },
     { year: 2009, bolsa: "bolsas\\2009\\IMG_20210611_181052.webp", equipo: "MILRAM MUSETTE" },
 
@@ -962,7 +962,7 @@ const allImagesArray = [
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_121938.webp", equipo: "AG2R LA MOUNDIALE MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_125138.webp", equipo: "ACQUA & SAPONE MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_150759.webp", equipo: "LAMPRE MUSETTE" },
-    { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_155025 - copia.webp", equipo: "ANDALUCIA 1 MUSETTE" },
+    { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_155025.webp", equipo: "ANDALUCIA 1 MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_155051.webp", equipo: "ANDALUCIA 2 MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_155131.webp", equipo: "ASTANA MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211030_160445.webp", equipo: "SAUNIER DUVAL MUSETTE" },
@@ -979,7 +979,7 @@ const allImagesArray = [
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_194651.webp", equipo: " TENAX MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_194805.webp", equipo: "BARBOT MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_195943.webp", equipo: "CAISSE D´EPARGNE  MUSETTE" },
-    { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_201715 (2).webp", equipo: "CONTENTPOLIS MURCIA DELANTERA MUSETTE" },
+    { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_201715.webp", equipo: "CONTENTPOLIS MURCIA DELANTERA MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_201719.webp", equipo: "CONTENTPOLIS MURCIA TRASERA MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_204336.webp", equipo: "LIQUIGAS MUSETTE" },
     { year: 2008, bolsa: "bolsas\\2008\\IMG_20211022_204525.webp", equipo: "TINKOFF MUSETTE" },
@@ -1337,6 +1337,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
