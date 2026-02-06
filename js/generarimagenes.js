@@ -1008,9 +1008,7 @@ const allImagesArray = [
 
     { year: 2006, bolsa: "bolsas\\2006\\IMG20230620201116.webp", equipo: "AGRITUBEL DELANTERA MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG20230620201120.webp", equipo: "AGRITUBEL TRASERA MUSETTE" },
-    {
-        year: 2006, bolsa: "bolsas\\2006\\IMG_20220828_211706.webp", equipo: "TEAM STOREZ V.C. Ath"
-    },
+    { year: 2006, bolsa: "bolsas\\2006\\IMG_20220828_211706.webp", equipo: "TEAM STOREZ V.C. Ath"},
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20210611_175907.webp", equipo: "VERMARC MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20211022_193706.webp", equipo: "EQUIPO NACIONAL DE BELGICA MUSETTE" },
     { year: 2006, bolsa: "bolsas\\2006\\IMG_20211022_194525.webp", equipo: "JACQUES MUSETTE" },
@@ -1153,7 +1151,7 @@ const allImagesArray = [
     { year: 1993, bolsa: "bolsas\\1993\\IMG_20211022_195752.webp", equipo: "AMAYA SEGUROS MUSETTE" },
     { year: 1993, bolsa: "bolsas\\1993\\IMG_20211022_195807.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN DELANTERA MUSETTE" },
     { year: 1993, bolsa: "bolsas\\1993\\IMG_20211022_195818.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN TRASERA  MUSETTE" },
-    { year: 1993, bolsa: "bolsas\\1993\\IMG_20211030_121721.webp", equipo: " LOTUS MUSETTE" },
+    { year: 1993, bolsa: "bolsas\\1993\\IMG_20211030_121721.webp", equipo: "LOTUS MUSETTE" },
     { year: 1993, bolsa: "bolsas\\1993\\IMG20230620200223.webp", equipo: "GAN MUSETTE" },
     { year: 1993, bolsa: "bolsas\\1993\\IMG20230620200309.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN DELANTERA  MUSETTE" },
     { year: 1993, bolsa: "bolsas\\1993\\IMG20230620200315.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN TRASERA MUSETTE" },
@@ -1339,3 +1337,4 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
