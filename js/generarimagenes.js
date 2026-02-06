@@ -537,7 +537,7 @@ const allImagesArray = [
     { year: 2019, bolsa: "bolsas/2019/IMG_20210611_180828.webp", equipo: "MANZANA POSTOBON MUSETTE" },
     { year: 2019, bolsa: "bolsas/2019/IMG_20210611_180845.webp", equipo: "AV VILLAS MUSETTE" },
     { year: 2019, bolsa: "bolsas/2019/IMG_20210611_181224.webp", equipo: "KIWI ATLANTICO MUSETTE" },
-    { year: 2019, bolsa: "bolsas/2019/IMG_20210611_181246 (2).webp", equipo: "SECRET TRAINING DELANTERA MUSETTE" },
+    { year: 2019, bolsa: "bolsas/2019/IMG_20210611_181246.webp", equipo: "SECRET TRAINING DELANTERA MUSETTE" },
     { year: 2019, bolsa: "bolsas/2019/IMG_20210611_181249.webp", equipo: "SECRET TRAINING TRASERA MUSETTE" },
 
     ///////// 2018/////////////
@@ -1153,7 +1153,7 @@ const allImagesArray = [
     { year: 1993, bolsa: "bolsas/1993/IMG_20211022_195752.webp", equipo: "AMAYA SEGUROS MUSETTE" },
     { year: 1993, bolsa: "bolsas/1993/IMG_20211022_195807.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN DELANTERA MUSETTE" },
     { year: 1993, bolsa: "bolsas/1993/IMG_20211022_195818.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN TRASERA  MUSETTE" },
-    { year: 1993, bolsa: "bolsas/1993/IMG_20211030_121721 (2).webp", equipo: " LOTUS MUSETTE" },
+    { year: 1993, bolsa: "bolsas/1993/IMG_20211030_121721.webp", equipo: " LOTUS MUSETTE" },
     { year: 1993, bolsa: "bolsas/1993/IMG20230620200223.webp", equipo: "GAN MUSETTE" },
     { year: 1993, bolsa: "bolsas/1993/IMG20230620200309.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN DELANTERA  MUSETTE" },
     { year: 1993, bolsa: "bolsas/1993/IMG20230620200315.webp", equipo: "ARTIACH FILIPINOS CHIQUILIN TRASERA MUSETTE" },
