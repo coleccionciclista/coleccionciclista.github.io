@@ -1,6 +1,7 @@
 
 
 const allImagesArray = [
+        { year: 2026, bolsa: "bolsas\\2026\\", equipo: " " },
     //////// 2025 ////////////
     { year: 2025, bolsa: "bolsas\\2025\\IMG_5904.webp", equipo: " MUSETTE" },
     { year: 2025, bolsa: "bolsas\\2025\\IMG_5977.webp", equipo: " MUSETTE" },
@@ -1338,6 +1339,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
