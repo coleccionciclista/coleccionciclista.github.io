@@ -1185,6 +1185,7 @@ const allImagesArray = [
     { year: 1990, bolsa: "bolsas\\1990\\IMG_20221016_153446_1.webp", equipo: "TULIP COMPUTERS MUSETTE " },
     { year: 1990, bolsa: "bolsas\\1990\\IMG20230620200427.webp", equipo: "SEUR MUSETTE" },
     { year: 1990, bolsa: "bolsas\\1990\\IMG_5931.webp", equipo: "LOTTO SUPERCLUB MUSETTE" },
+    { year: 1990, bolsa: "bolsas\\1990\\IMG_5930.webp", equipo: "LOTTO SUPERCLUB MUSETTE" },
 
     /////////////1989////////////
     { year: 1989, bolsa: "bolsas\\1989\\IMG_20210611_182925.webp", equipo: "VERYNET MUSETTE" },
@@ -1337,6 +1338,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
