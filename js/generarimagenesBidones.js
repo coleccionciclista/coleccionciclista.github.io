@@ -2813,8 +2813,44 @@ const allImagesArray = [
 
     { year: 1975, bidon: "bidones\\1975\\IMG20221229131251.webp", equipo: "" },
 ];
-// ... (resto del código igual arriba)
 
+$(document).ready(function () {
+    $("p").css("display", "block");
+});
+
+// Anular evento de enter en buscador
+$('input').keypress(function (e) {
+    if (e.which == 13) {
+        e.preventDefault();
+        return false;
+    }
+});
+
+const imageGallery = document.getElementById('image-gallery');
+const zoomedContainer = document.getElementById('zoomedContainer');
+const zoomedImage = document.getElementById('zoomedImage');
+
+function recogervalor() {
+    const loader = document.getElementById('loader');
+    const gallery = document.getElementById('image-gallery');
+    const inputBuscador = document.getElementById('buscador');
+
+    if (loader) loader.style.display = 'block';
+    gallery.style.opacity = '0.3';
+
+    let valorBusqueda = inputBuscador.value.toString().toUpperCase();
+
+    // Simulación de carga para que el usuario vea el spinner
+    setTimeout(() => {
+        updateGallery(valorBusqueda);
+
+        if (loader) loader.style.display = 'none';
+        gallery.style.opacity = '1';
+
+        // Scroll suave al inicio de los resultados
+        gallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 1500); // 1.5 segundos es ideal para no cansar al usuario
+}
 function updateGallery(selectedYear) {
     $("p").css("display", "none");
     imageGallery.innerHTML = '';
@@ -2876,4 +2912,14 @@ function updateGallery(selectedYear) {
         imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron bidones.</p>';
     }
 }
+// Control de visibilidad del buscador
+function visualizarBucadores() {
+    const buscador = document.getElementById('buscadorHeader');
+    if(buscador) buscador.style.visibility = 'visible';
+}
+
+// Cierre del zoom
+zoomedContainer.addEventListener('click', () => {
+    zoomedContainer.style.display = 'none';
+});
 
