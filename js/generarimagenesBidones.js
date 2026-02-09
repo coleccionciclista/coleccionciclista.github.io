@@ -236,7 +236,6 @@ const allImagesArray = [
     { year: 2024, bidon: "bidones\\2024\\IMG_4962.webp  ", equipo: "" },
     { year: 2024, bidon: "bidones\\2024\\IMG_4963.webp  ", equipo: "" },
     { year: 2024, bidon: "bidones\\2024\\IMG_4964.webp  ", equipo: "" },
-    { year: 2024, bidon: "bidones\\2024\\IMG_4965.webp  ", equipo: "" },
     { year: 2024, bidon: "bidones\\2024\\IMG_4967.webp  ", equipo: "" },
     { year: 2024, bidon: "bidones\\2024\\IMG_4968.webp  ", equipo: "" },
     { year: 2024, bidon: "bidones\\2024\\IMG_4969.webp  ", equipo: "" },
@@ -2925,3 +2924,4 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
