@@ -2813,128 +2813,115 @@ const allImagesArray = [
 
     { year: 1975, bidon: "bidones\\1975\\IMG20221229131251.webp", equipo: "" },
 ];
-Para que tu JavaScript funcione exactamente con las mismas funciones que el bloque que proporcionaste (incluyendo el spinner, el scroll automático y el uso de DocumentFragment), pero manteniendo las funciones privadas (sin usar el objeto window), debemos mover toda la lógica dentro del bloque $(document).ready().
-
-De esta manera, el código es más seguro y eficiente, ya que vinculamos los eventos directamente desde JavaScript.
-
-Solución: Código para generarimagenesBidones.js
-JavaScript
-// Tu array de datos permanece arriba
-const allImagesArray = [
-    { year: 1976, bidon: "bidones/1976/IMG20221229125604.webp", equipo: "" },
-    { year: 1976, bidon: "bidones/1976/IMG20221229125610.webp", equipo: "" },
-    { year: 1975, bidon: "bidones/1975/IMG20221229131251.webp", equipo: "" },
-];
-
 $(document).ready(function () {
-    // 1. Mostrar párrafos iniciales
     $("p").css("display", "block");
+});
 
-    // 2. Selectores locales (no globales)
-    const imageGallery = document.getElementById('image-gallery');
-    const zoomedContainer = document.getElementById('zoomedContainer');
-    const zoomedImage = document.getElementById('zoomedImage');
-    const inputBuscador = document.getElementById('buscador');
-    const buscadorHeader = document.getElementById('buscadorHeader');
-    const btnSearch = document.querySelector('.btn-outline-success');
-
-    // --- FUNCIÓN ACTUALIZAR GALERÍA ---
-    function updateGallery(selectedYear) {
-        $("p").css("display", "none");
-        imageGallery.innerHTML = '';
-
-        // Filtro Único (Evita repetidas)
-        const filteredImages = allImagesArray.filter(image =>
-            (image.year && image.year.toString() === selectedYear) ||
-            (image.equipo && image.equipo.toUpperCase().includes(selectedYear))
-        );
-
-        // DocumentFragment para carga masiva rápida
-        const fragment = document.createDocumentFragment();
-
-        filteredImages.forEach(image => {
-            if (!image.bidon) return;
-
-            const cardElement = document.createElement('div');
-            cardElement.className = 'image-card';
-
-            const imgElement = document.createElement('img');
-            imgElement.src = image.bidon; // Solo WebP como pediste
-            imgElement.alt = `Bidón Equipo: ${image.equipo}`;
-            imgElement.loading = 'lazy'; // Lazy Loading
-            imgElement.decoding = 'async';
-
-            const textElement = document.createElement('p');
-            textElement.textContent = `${image.equipo} (${image.year})`;
-
-            cardElement.appendChild(imgElement);
-            cardElement.appendChild(textElement);
-
-            // Zoom al hacer clic
-            cardElement.addEventListener('click', () => {
-                zoomedImage.src = image.bidon;
-                zoomedImage.alt = image.equipo;
-                zoomedContainer.style.display = 'flex';
-            });
-
-            fragment.appendChild(cardElement);
-        });
-
-        imageGallery.appendChild(fragment);
-
-        if (filteredImages.length === 0 && selectedYear !== "") {
-            imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron bidones.</p>';
-        }
-    }
-
-    // --- FUNCIÓN RECOGER VALOR ---
-    function iniciarBusqueda() {
-        const loader = document.getElementById('loader');
-        
-        // Mostrar buscador si estaba oculto
-        if (buscadorHeader) buscadorHeader.style.visibility = 'visible';
-
-        // Spinner y opacidad
-        if (loader) loader.style.display = 'block';
-        imageGallery.style.opacity = '0.3';
-
-        const selectedYear = inputBuscador.value.toString().toUpperCase();
-
-        // Simulamos la precarga (10 segundos según tu código, pero recomiendo 2)
-        setTimeout(() => {
-            updateGallery(selectedYear);
-
-            if (loader) loader.style.display = 'none';
-            imageGallery.style.opacity = '1';
-
-            // Scroll automático suave
-            imageGallery.scrollIntoView({ behavior: 'smooth' });
-        }, 2000); // Lo he bajado a 2 segundos por UX, cámbialo a 10000 si prefieres 10s.
-    }
-
-    // --- VINCULACIÓN DE EVENTOS (QUITAMOS ONCLICK DEL HTML) ---
-
-    // Click en el botón Buscar
-    if (btnSearch) {
-        btnSearch.addEventListener('click', iniciarBusqueda);
-    }
-
-    // Enter en el teclado
-    $('input').keypress(function (e) {
-        if (e.which == 13) {
-            e.preventDefault();
-            iniciarBusqueda();
-            return false;
-        }
-    });
-
-    // Cierre del zoom
-    if (zoomedContainer) {
-        zoomedContainer.addEventListener('click', () => {
-            zoomedContainer.style.display = 'none';
-        });
+// Anular evento de enter en formulario
+$('input').keypress(function (e) {
+    if (e.which == 13) {
+        return false;
     }
 });
 
+const imageGallery = document.getElementById('image-gallery');
+const zoomedContainer = document.getElementById('zoomedContainer');
+const zoomedImage = document.getElementById('zoomedImage');
 
+function recogervalor() {
+    const loader = document.getElementById('loader');
+    const gallery = document.getElementById('image-gallery');
 
+    // 1. Mostrar spinner y limpiar/ocultar galería
+    if (loader) loader.style.display = 'block';
+    gallery.style.opacity = '0.3'; // La dejamos translúcida mientras carga
+
+    const selectedYear2 = document.getElementById('buscador').value;
+    let selectedYear = selectedYear2.toString().toUpperCase();
+
+    // 2. Simulamos la "precarga".
+    // En lugar de 30 segundos (que es demasiado), pondremos unos 2-3 segundos
+    // que es suficiente para que el navegador procese el lazy loading.
+    setTimeout(() => {
+        updateGallery(selectedYear);
+
+        if (loader) loader.style.display = 'none';
+        gallery.style.opacity = '1'; // Restauramos la visibilidad
+
+        // Opcional: Scroll automático al inicio de la galería tras cargar
+        gallery.scrollIntoView({ behavior: 'smooth' });
+    }, 10000); // 2000 milisegundos = 2 segundos. Cámbialo si quieres más.
+}
+
+function updateGallery(selectedYear) {
+    // Ocultar párrafos iniciales y limpiar galería
+    $("p").css("display", "none");
+    imageGallery.innerHTML = '';
+
+    // 2. MEJORA: Filtro Único (Evita que las imágenes salgan repetidas si el año está en el nombre del equipo)
+    const filteredImages = allImagesArray.filter(image =>
+        image.year.toString() === selectedYear ||
+        image.equipo.toUpperCase().includes(selectedYear)
+    );
+
+    // 3. MEJORA: DocumentFragment (Carga masiva mucho más rápida)
+    const fragment = document.createDocumentFragment();
+
+    filteredImages.forEach(image => {
+        const cardElement = document.createElement('div');
+        cardElement.className = 'image-card';
+
+        const pictureElement = document.createElement('picture');
+        const sourceElement = document.createElement('source');
+
+        // Detectar si el objeto usa 'bolsa' o 'bidon' automáticamente
+        const rutaImagen = image.bolsa || image.bidon;
+
+        sourceElement.srcset = rutaImagen;
+        sourceElement.type = 'image/webp';
+
+        const imgElement = document.createElement('img');
+        imgElement.src = rutaImagen.replace('.webp', '.jpg');
+        imgElement.alt = `Equipo: ${image.equipo}`;
+
+        // 4. MEJORA: Lazy Loading (Solo descarga lo que el usuario ve)
+        imgElement.loading = 'lazy';
+        imgElement.decoding = 'async'; // Procesa la imagen sin bloquear la web
+
+        pictureElement.appendChild(sourceElement);
+        pictureElement.appendChild(imgElement);
+
+        const textElement = document.createElement('p');
+        textElement.textContent = `${image.equipo} ${image.year}`;
+
+        cardElement.appendChild(pictureElement);
+        cardElement.appendChild(textElement);
+
+        // Zoom al hacer clic
+        cardElement.addEventListener('click', () => {
+            zoomedImage.src = rutaImagen;
+            zoomedImage.alt = image.equipo;
+            zoomedContainer.style.display = 'flex';
+        });
+
+        fragment.appendChild(cardElement);
+    });
+
+    // 5. MEJORA: Inserción única al DOM
+    imageGallery.appendChild(fragment);
+
+    // Si no hay resultados, avisar al usuario
+    if (filteredImages.length === 0 && selectedYear !== "") {
+        imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron imágenes para esa búsqueda.</p>';
+    }
+}
+
+function visualizarBucadores() {
+    const buscador = document.getElementById('buscadorHeader');
+    if(buscador) buscador.style.visibility = 'visible';
+}
+
+// Cierra el zoom
+zoomedContainer.addEventListener('click', () => {
+    zoomedContainer.style.display = 'none';
+});
