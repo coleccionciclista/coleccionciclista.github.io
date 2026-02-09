@@ -2813,113 +2813,106 @@ const allImagesArray = [
 
     { year: 1975, bidon: "bidones\\1975\\IMG20221229131251.webp", equipo: "" },
 ];
-
 $(document).ready(function () {
+    // 1. Mostrar párrafos iniciales
     $("p").css("display", "block");
-});
 
-// Anular evento de enter en buscador
-$('input').keypress(function (e) {
-    if (e.which == 13) {
-        e.preventDefault();
-        return false;
-    }
-});
-
-const imageGallery = document.getElementById('image-gallery');
-const zoomedContainer = document.getElementById('zoomedContainer');
-const zoomedImage = document.getElementById('zoomedImage');
-
-function recogervalor() {
-    const loader = document.getElementById('loader');
-    const gallery = document.getElementById('image-gallery');
+    // 2. Selectores de elementos
+    const imageGallery = document.getElementById('image-gallery');
+    const zoomedContainer = document.getElementById('zoomedContainer');
+    const zoomedImage = document.getElementById('zoomedImage');
     const inputBuscador = document.getElementById('buscador');
+    const btnSearch = document.querySelector('.btn-outline-success');
 
-    if (loader) loader.style.display = 'block';
-    gallery.style.opacity = '0.3';
-
-    let valorBusqueda = inputBuscador.value.toString().toUpperCase();
-
-    // Simulación de carga para que el usuario vea el spinner
-    setTimeout(() => {
-        updateGallery(valorBusqueda);
-
-        if (loader) loader.style.display = 'none';
-        gallery.style.opacity = '1';
-
-        // Scroll suave al inicio de los resultados
-        gallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, 1500); // 1.5 segundos es ideal para no cansar al usuario
-}
-function updateGallery(selectedYear) {
-    $("p").css("display", "none");
-    imageGallery.innerHTML = '';
-
-    const filteredImages = allImagesArray.filter(image =>
-        image.year.toString() === selectedYear ||
-        image.equipo.toUpperCase().includes(selectedYear)
-    );
-
-    const fragment = document.createDocumentFragment();
-
-    filteredImages.forEach(image => {
-        // --- SOLUCIÓN AL ERROR: VALIDACIÓN ---
-        // Si no existe la propiedad 'bidon', saltamos este elemento
-        if (!image.bidon) {
-            console.warn("Imagen faltante para:", image.equipo);
-            return; 
-        }
-
-        const cardElement = document.createElement('div');
-        cardElement.className = 'image-card';
-
-        const pictureElement = document.createElement('picture');
-        const rutaImagen = image.bidon;
-
-        const sourceElement = document.createElement('source');
-        sourceElement.srcset = rutaImagen;
-        sourceElement.type = 'image/webp';
-
-        const imgElement = document.createElement('img');
+    // 3. Función de filtrado y renderizado (Local)
+    function updateGallery(selectedYear) {
+        if (!imageGallery) return;
         
-        // Ahora el .replace no fallará porque confirmamos que rutaImagen existe
-        imgElement.src = rutaImagen.replace('.webp', '.jpg');
-        imgElement.alt = `Bidón Equipo: ${image.equipo}`;
-        imgElement.loading = 'lazy';
-        imgElement.decoding = 'async';
+        $("p").css("display", "none");
+        imageGallery.innerHTML = '';
 
-        pictureElement.appendChild(sourceElement);
-        pictureElement.appendChild(imgElement);
-
-        const textElement = document.createElement('p');
-        textElement.textContent = `${image.equipo} (${image.year})`;
-
-        cardElement.appendChild(pictureElement);
-        cardElement.appendChild(textElement);
-
-        cardElement.addEventListener('click', () => {
-            zoomedImage.src = rutaImagen;
-            zoomedImage.alt = image.equipo;
-            zoomedContainer.style.display = 'flex';
+        const filteredImages = allImagesArray.filter(image => {
+            if (selectedYear === "") return true;
+            return (image.year && image.year.toString() === selectedYear) ||
+                   (image.equipo && image.equipo.toUpperCase().includes(selectedYear));
         });
 
-        fragment.appendChild(cardElement);
+        const fragment = document.createDocumentFragment();
+
+        filteredImages.forEach(image => {
+            if (!image.bidon) return;
+
+            const cardElement = document.createElement('div');
+            cardElement.className = 'image-card';
+
+            const imgElement = document.createElement('img');
+            imgElement.src = image.bidon; // Ruta .webp directa
+            imgElement.alt = `Bidón Equipo: ${image.equipo}`;
+            imgElement.loading = 'lazy';
+
+            const textElement = document.createElement('p');
+            textElement.textContent = `${image.equipo} (${image.year})`;
+
+            cardElement.appendChild(imgElement);
+            cardElement.appendChild(textElement);
+
+            cardElement.addEventListener('click', () => {
+                zoomedImage.src = image.bidon;
+                zoomedImage.alt = image.equipo;
+                zoomedContainer.style.display = 'flex';
+            });
+
+            fragment.appendChild(cardElement);
+        });
+
+        imageGallery.appendChild(fragment);
+
+        if (filteredImages.length === 0 && selectedYear !== "") {
+            imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron bidones.</p>';
+        }
+    }
+
+    // 4. Lógica de búsqueda (Local)
+    function ejecutarBusqueda() {
+        const loader = document.getElementById('loader');
+        if (loader) loader.style.display = 'block';
+        imageGallery.style.opacity = '0.3';
+
+        const valorBusqueda = inputBuscador.value.toString().toUpperCase();
+
+        setTimeout(() => {
+            updateGallery(valorBusqueda);
+            if (loader) loader.style.display = 'none';
+            imageGallery.style.opacity = '1';
+            imageGallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 1000);
+    }
+
+    // 5. Asignación de Eventos (Sin usar onclick en el HTML)
+    if (btnSearch) {
+        btnSearch.addEventListener('click', function() {
+            const buscadorHeader = document.getElementById('buscadorHeader');
+            if (buscadorHeader) buscadorHeader.style.visibility = 'visible';
+            ejecutarBusqueda();
+        });
+    }
+
+    $(inputBuscador).keypress(function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            ejecutarBusqueda();
+            return false;
+        }
     });
 
-    imageGallery.appendChild(fragment);
-
-    if (filteredImages.length === 0 && selectedYear !== "") {
-        imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron bidones.</p>';
+    if (zoomedContainer) {
+        zoomedContainer.addEventListener('click', () => {
+            zoomedContainer.style.display = 'none';
+        });
     }
-}
-// Control de visibilidad del buscador
-function visualizarBucadores() {
-    const buscador = document.getElementById('buscadorHeader');
-    if(buscador) buscador.style.visibility = 'visible';
-}
 
-// Cierre del zoom
-zoomedContainer.addEventListener('click', () => {
-    zoomedContainer.style.display = 'none';
+    // Ejecución inicial si deseas que cargue algo al abrir la web
+    ejecutarBusqueda();
 });
+
 
