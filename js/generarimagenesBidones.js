@@ -2818,88 +2818,108 @@ $(document).ready(function () {
     $("p").css("display", "block");
 });
 
-// anular evento de enter en formulario
+// Anular evento de enter en buscador
 $('input').keypress(function (e) {
     if (e.which == 13) {
+        e.preventDefault();
         return false;
     }
 });
 
-function recogervalor() {
-    const selectedYear2 = document.getElementById('buscador').value;
-    selectedYear = selectedYear2.toString();
-    selectedYear = selectedYear.toUpperCase();
-    // alert(selectedYear);
-    updateGallery(selectedYear);
-}
-
-
-
-
-
-const yearDropdown = document.getElementById('yearDropdown');
 const imageGallery = document.getElementById('image-gallery');
 const zoomedContainer = document.getElementById('zoomedContainer');
 const zoomedImage = document.getElementById('zoomedImage');
 
+function recogervalor() {
+    const loader = document.getElementById('loader');
+    const gallery = document.getElementById('image-gallery');
+    const inputBuscador = document.getElementById('buscador');
 
-function updateGallery(selectedYear) {
+    if (loader) loader.style.display = 'block';
+    gallery.style.opacity = '0.3';
+
+    let valorBusqueda = inputBuscador.value.toString().toUpperCase();
+
+    // Simulación de carga para que el usuario vea el spinner
+    setTimeout(() => {
+        updateGallery(valorBusqueda);
+
+        if (loader) loader.style.display = 'none';
+        gallery.style.opacity = '1';
+
+        // Scroll suave al inicio de los resultados
+        gallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 1500); // 1.5 segundos es ideal para no cansar al usuario
+}
+
+function updateGallery(busqueda) {
+    // Ocultar párrafos iniciales y limpiar galería
     $("p").css("display", "none");
     imageGallery.innerHTML = '';
 
-    const filteredImagesyear = allImagesArray.filter(image => image.year == selectedYear);
-    const filteredImagesteam = allImagesArray.filter(image => image.equipo.includes(selectedYear));
+    // Filtro específico para BIDONES
+    // Busca por año o por el nombre del equipo
+    const filteredImages = allImagesArray.filter(image =>
+        image.year.toString() === busqueda ||
+        image.equipo.toUpperCase().includes(busqueda)
+    );
 
-    const loadImages = (images) => {
-        images.forEach(image => {
-            const cardElement = document.createElement('div');
-            cardElement.className = 'image-card';
+    const fragment = document.createDocumentFragment();
 
-            const pictureElement = document.createElement('picture');
+    filteredImages.forEach(image => {
+        const cardElement = document.createElement('div');
+        cardElement.className = 'image-card';
 
-            const sourceElement = document.createElement('source');
-            sourceElement.srcset = image.bolsa; // WebP
-            sourceElement.type = 'image/webp';
+        const pictureElement = document.createElement('picture');
 
-            const imgElement = document.createElement('img');
-            imgElement.src = image.bolsa.replace('.webp', '.jpg'); // Fallback JPG
-            imgElement.alt = `Año ${selectedYear}`;
-            imgElement.loading = 'lazy';
+        // Usamos específicamente la propiedad .bidon
+        const rutaImagen = image.bidon;
 
-            pictureElement.appendChild(sourceElement);
-            pictureElement.appendChild(imgElement);
+        const sourceElement = document.createElement('source');
+        sourceElement.srcset = rutaImagen;
+        sourceElement.type = 'image/webp';
 
-            const textElement = document.createElement('p');
-            textElement.textContent = `${image.equipo} ${image.year}`;
+        const imgElement = document.createElement('img');
+        // Fallback a JPG por si el navegador es muy antiguo
+        imgElement.src = rutaImagen.replace('.webp', '.jpg');
+        imgElement.alt = `Bidón Equipo: ${image.equipo}`;
+        imgElement.loading = 'lazy';
+        imgElement.decoding = 'async';
 
-            cardElement.appendChild(pictureElement);
-            cardElement.appendChild(textElement);
-            imageGallery.appendChild(cardElement);
+        pictureElement.appendChild(sourceElement);
+        pictureElement.appendChild(imgElement);
 
-            cardElement.addEventListener('click', () => {
-                zoomedImage.src = imgElement.src; // Usa el fallback (JPG)
-                zoomedImage.alt = `Año ${selectedYear}`;
-                zoomedContainer.style.display = 'flex';
-            });
+        const textElement = document.createElement('p');
+        textElement.textContent = `${image.equipo} (${image.year})`;
+
+        cardElement.appendChild(pictureElement);
+        cardElement.appendChild(textElement);
+
+        // Zoom al hacer clic
+        cardElement.addEventListener('click', () => {
+            zoomedImage.src = rutaImagen;
+            zoomedImage.alt = `Bidón ${image.equipo}`;
+            zoomedContainer.style.display = 'flex';
         });
-    };
 
-    loadImages(filteredImagesyear);
-    loadImages(filteredImagesteam);
+        fragment.appendChild(cardElement);
+    });
+
+    imageGallery.appendChild(fragment);
+
+    // Mensaje si no hay resultados
+    if (filteredImages.length === 0 && busqueda !== "") {
+        imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%; margin-top:20px;">No se encontraron bidones para esa búsqueda.</p>';
+    }
 }
 
+// Control de visibilidad del buscador
+function visualizarBucadores() {
+    const buscador = document.getElementById('buscadorHeader');
+    if(buscador) buscador.style.visibility = 'visible';
+}
 
-// Cierra el zoom al hacer clic fuera de la imagen
+// Cierre del zoom
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
-
-function cerrarAlClick(event) {
-    event.target.style.display = 'none';
-}
-document.getElementById('zoomedContainer').addEventListener('click', cerrarAlClick);
-function visualizarBucadores() {
-    document.getElementById('buscadorHeader').style.visibility = 'visible';      // Muestra
-
-}
-
