@@ -2813,30 +2813,43 @@ const allImagesArray = [
 
     { year: 1975, bidon: "bidones\\1975\\IMG20221229131251.webp", equipo: "" },
 ];
+Para que tu JavaScript funcione exactamente con las mismas funciones que el bloque que proporcionaste (incluyendo el spinner, el scroll automático y el uso de DocumentFragment), pero manteniendo las funciones privadas (sin usar el objeto window), debemos mover toda la lógica dentro del bloque $(document).ready().
+
+De esta manera, el código es más seguro y eficiente, ya que vinculamos los eventos directamente desde JavaScript.
+
+Solución: Código para generarimagenesBidones.js
+JavaScript
+// Tu array de datos permanece arriba
+const allImagesArray = [
+    { year: 1976, bidon: "bidones/1976/IMG20221229125604.webp", equipo: "" },
+    { year: 1976, bidon: "bidones/1976/IMG20221229125610.webp", equipo: "" },
+    { year: 1975, bidon: "bidones/1975/IMG20221229131251.webp", equipo: "" },
+];
+
 $(document).ready(function () {
     // 1. Mostrar párrafos iniciales
     $("p").css("display", "block");
 
-    // 2. Selectores de elementos
+    // 2. Selectores locales (no globales)
     const imageGallery = document.getElementById('image-gallery');
     const zoomedContainer = document.getElementById('zoomedContainer');
     const zoomedImage = document.getElementById('zoomedImage');
     const inputBuscador = document.getElementById('buscador');
+    const buscadorHeader = document.getElementById('buscadorHeader');
     const btnSearch = document.querySelector('.btn-outline-success');
 
-    // 3. Función de filtrado y renderizado (Local)
+    // --- FUNCIÓN ACTUALIZAR GALERÍA ---
     function updateGallery(selectedYear) {
-        if (!imageGallery) return;
-        
         $("p").css("display", "none");
         imageGallery.innerHTML = '';
 
-        const filteredImages = allImagesArray.filter(image => {
-            if (selectedYear === "") return true;
-            return (image.year && image.year.toString() === selectedYear) ||
-                   (image.equipo && image.equipo.toUpperCase().includes(selectedYear));
-        });
+        // Filtro Único (Evita repetidas)
+        const filteredImages = allImagesArray.filter(image =>
+            (image.year && image.year.toString() === selectedYear) ||
+            (image.equipo && image.equipo.toUpperCase().includes(selectedYear))
+        );
 
+        // DocumentFragment para carga masiva rápida
         const fragment = document.createDocumentFragment();
 
         filteredImages.forEach(image => {
@@ -2846,9 +2859,10 @@ $(document).ready(function () {
             cardElement.className = 'image-card';
 
             const imgElement = document.createElement('img');
-            imgElement.src = image.bidon; // Ruta .webp directa
+            imgElement.src = image.bidon; // Solo WebP como pediste
             imgElement.alt = `Bidón Equipo: ${image.equipo}`;
-            imgElement.loading = 'lazy';
+            imgElement.loading = 'lazy'; // Lazy Loading
+            imgElement.decoding = 'async';
 
             const textElement = document.createElement('p');
             textElement.textContent = `${image.equipo} (${image.year})`;
@@ -2856,6 +2870,7 @@ $(document).ready(function () {
             cardElement.appendChild(imgElement);
             cardElement.appendChild(textElement);
 
+            // Zoom al hacer clic
             cardElement.addEventListener('click', () => {
                 zoomedImage.src = image.bidon;
                 zoomedImage.alt = image.equipo;
@@ -2872,47 +2887,54 @@ $(document).ready(function () {
         }
     }
 
-    // 4. Lógica de búsqueda (Local)
-    function ejecutarBusqueda() {
+    // --- FUNCIÓN RECOGER VALOR ---
+    function iniciarBusqueda() {
         const loader = document.getElementById('loader');
+        
+        // Mostrar buscador si estaba oculto
+        if (buscadorHeader) buscadorHeader.style.visibility = 'visible';
+
+        // Spinner y opacidad
         if (loader) loader.style.display = 'block';
         imageGallery.style.opacity = '0.3';
 
-        const valorBusqueda = inputBuscador.value.toString().toUpperCase();
+        const selectedYear = inputBuscador.value.toString().toUpperCase();
 
+        // Simulamos la precarga (10 segundos según tu código, pero recomiendo 2)
         setTimeout(() => {
-            updateGallery(valorBusqueda);
+            updateGallery(selectedYear);
+
             if (loader) loader.style.display = 'none';
             imageGallery.style.opacity = '1';
-            imageGallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 1000);
+
+            // Scroll automático suave
+            imageGallery.scrollIntoView({ behavior: 'smooth' });
+        }, 2000); // Lo he bajado a 2 segundos por UX, cámbialo a 10000 si prefieres 10s.
     }
 
-    // 5. Asignación de Eventos (Sin usar onclick en el HTML)
+    // --- VINCULACIÓN DE EVENTOS (QUITAMOS ONCLICK DEL HTML) ---
+
+    // Click en el botón Buscar
     if (btnSearch) {
-        btnSearch.addEventListener('click', function() {
-            const buscadorHeader = document.getElementById('buscadorHeader');
-            if (buscadorHeader) buscadorHeader.style.visibility = 'visible';
-            ejecutarBusqueda();
-        });
+        btnSearch.addEventListener('click', iniciarBusqueda);
     }
 
-    $(inputBuscador).keypress(function (e) {
+    // Enter en el teclado
+    $('input').keypress(function (e) {
         if (e.which == 13) {
             e.preventDefault();
-            ejecutarBusqueda();
+            iniciarBusqueda();
             return false;
         }
     });
 
+    // Cierre del zoom
     if (zoomedContainer) {
         zoomedContainer.addEventListener('click', () => {
             zoomedContainer.style.display = 'none';
         });
     }
-
-    // Ejecución inicial si deseas que cargue algo al abrir la web
-    ejecutarBusqueda();
 });
+
 
 
