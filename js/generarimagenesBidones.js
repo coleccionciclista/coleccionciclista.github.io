@@ -1894,7 +1894,7 @@ const allImagesArray = [
     { year: 2017, bidon: "bidones\\2017\\IMG20230917134818.webp", equipo: "" },
     { year: 2017, bidon: "bidones\\2017\\IMG20230917134821.webp", equipo: "" },
     { year: 2017, bidon: "bidones\\2017\\IMG20230917134828.webp", equipo: "" },
-    { year: 2017, bidon: "bidones\\2017\\L.A.AlumíniosMetalusa Blackjack.webp", equipo: "L.A.AlumíniosMetalusa Blackjack" },
+    { year: 2017, bidon: "bidones\\2017\\L_A_Alumínios_Metalusa_Blackjack.webp", equipo: "L.A.AlumíniosMetalusa Blackjack" },
 
     //////////2016////////////////////
     { year: 2016, bidon: "bidones\\2016\\IMG_5129.webp", equipo: "" },
@@ -2924,5 +2924,6 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
