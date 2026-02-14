@@ -181,6 +181,26 @@
                 transition: opacity 0.5s ease;
             }
 
+            .lds-roller {
+              display: inline-block;
+              position: relative;
+              width: 80px;
+              height: 80px;
+            }
+            .lds-roller div {
+              animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+              transform-origin: 40px 40px;
+            }
+            .lds-roller div:after {
+              content: " ";
+              display: block;
+              position: absolute;
+              width: 7px;
+              height: 7px;
+              border-radius: 50%;
+              background: #fff; /* Color de los puntos */
+              margin: -4px 0 0 -4px;
+            }
     </style>
 </head>
 
@@ -224,9 +244,9 @@
         </div>
     </nav>
 
-    <div id="loader" style="display:none; text-align:center; padding: 50px;">
+     <div id="loader" style="display:none; text-align:center; padding: 50px;">
     <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-    <p style="color: white; font-weight: bold; margin-top: 20px;">Loading Musettes...</p>
+    <p style="color: white; font-weight: bold; margin-top: 20px;">Loading Bidons</p>
 </div>
 
     <div id="container">
@@ -252,5 +272,6 @@
 </body>
 
 </html>
+
 
 
