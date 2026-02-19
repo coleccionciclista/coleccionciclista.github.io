@@ -2866,26 +2866,31 @@ function updateGallery(selectedYear) {
     // 3. MEJORA: DocumentFragment (Carga masiva mucho más rápida)
     const fragment = document.createDocumentFragment();
 
-    filteredImages.forEach(image => {
+ filteredImages.forEach(image => {
         const cardElement = document.createElement('div');
         cardElement.className = 'image-card';
 
         const pictureElement = document.createElement('picture');
         const sourceElement = document.createElement('source');
 
-        // Detectar si el objeto usa 'bolsa' o 'bidon' automáticamente
-        const rutaImagen = image.bolsa || image.bidon;
+        // 1. OBTENER RUTA Y LIMPIARLA
+        // Esto cambia cualquier "\" por "/" para que funcione en móviles y GitHub
+        let rutaImagen = (image.bolsa || image.bidon).replace(/\\/g, '/');
 
+        // 2. CONFIGURAR SOURCE (WEBP)
         sourceElement.srcset = rutaImagen;
         sourceElement.type = 'image/webp';
 
         const imgElement = document.createElement('img');
+        
+        // 3. CONFIGURAR FALLBACK (JPG)
+        // Solo intenta cargar el .jpg si el .webp falla o no es compatible
         imgElement.src = rutaImagen.replace('.webp', '.jpg');
         imgElement.alt = `Equipo: ${image.equipo}`;
 
-        // 4. MEJORA: Lazy Loading (Solo descarga lo que el usuario ve)
+        // 4. RENDIMIENTO
         imgElement.loading = 'lazy';
-        imgElement.decoding = 'async'; // Procesa la imagen sin bloquear la web
+        imgElement.decoding = 'async';
 
         pictureElement.appendChild(sourceElement);
         pictureElement.appendChild(imgElement);
@@ -2896,7 +2901,7 @@ function updateGallery(selectedYear) {
         cardElement.appendChild(pictureElement);
         cardElement.appendChild(textElement);
 
-        // Zoom al hacer clic
+        // 5. ZOOM EVENT (Usando la ruta limpia)
         cardElement.addEventListener('click', () => {
             zoomedImage.src = rutaImagen;
             zoomedImage.alt = image.equipo;
@@ -2906,14 +2911,13 @@ function updateGallery(selectedYear) {
         fragment.appendChild(cardElement);
     });
 
-    // 5. MEJORA: Inserción única al DOM
+    // 6. INSERCIÓN AL DOM
+    imageGallery.innerHTML = ''; // Limpiar antes de insertar
     imageGallery.appendChild(fragment);
 
-    // Si no hay resultados, avisar al usuario
     if (filteredImages.length === 0 && selectedYear !== "") {
         imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron imágenes para esa búsqueda.</p>';
     }
-}
 
 function visualizarBucadores() {
     const buscador = document.getElementById('buscadorHeader');
@@ -2924,6 +2928,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
