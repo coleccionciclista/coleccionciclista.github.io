@@ -2866,59 +2866,101 @@ function updateGallery(selectedYear) {
     // 3. MEJORA: DocumentFragment (Carga masiva mucho más rápida)
     const fragment = document.createDocumentFragment();
 
- filteredImages.forEach(image => {
+filteredImages.forEach(image => {
+
         const cardElement = document.createElement('div');
+
         cardElement.className = 'image-card';
 
+
+
         const pictureElement = document.createElement('picture');
+
         const sourceElement = document.createElement('source');
 
-        // 1. OBTENER RUTA Y LIMPIARLA
-        // Esto cambia cualquier "\" por "/" para que funcione en móviles y GitHub
-        let rutaImagen = (image.bolsa || image.bidon).replace(/\\/g, '/');
 
-        // 2. CONFIGURAR SOURCE (WEBP)
+
+        // Detectar si el objeto usa 'bolsa' o 'bidon' automáticamente
+
+        const rutaImagen = image.bolsa || image.bidon;
+
+
+
         sourceElement.srcset = rutaImagen;
+
         sourceElement.type = 'image/webp';
 
+
+
         const imgElement = document.createElement('img');
-        
-        // 3. CONFIGURAR FALLBACK (JPG)
-        // Solo intenta cargar el .jpg si el .webp falla o no es compatible
+
         imgElement.src = rutaImagen.replace('.webp', '.jpg');
+
         imgElement.alt = `Equipo: ${image.equipo}`;
 
-        // 4. RENDIMIENTO
+
+
+        // 4. MEJORA: Lazy Loading (Solo descarga lo que el usuario ve)
+
         imgElement.loading = 'lazy';
-        imgElement.decoding = 'async';
+
+        imgElement.decoding = 'async'; // Procesa la imagen sin bloquear la web
+
+
 
         pictureElement.appendChild(sourceElement);
+
         pictureElement.appendChild(imgElement);
 
+
+
         const textElement = document.createElement('p');
+
         textElement.textContent = `${image.equipo} ${image.year}`;
 
+
+
         cardElement.appendChild(pictureElement);
+
         cardElement.appendChild(textElement);
 
-        // 5. ZOOM EVENT (Usando la ruta limpia)
+
+
+        // Zoom al hacer clic
+
         cardElement.addEventListener('click', () => {
+
             zoomedImage.src = rutaImagen;
+
             zoomedImage.alt = image.equipo;
+
             zoomedContainer.style.display = 'flex';
+
         });
 
+
+
         fragment.appendChild(cardElement);
+
     });
 
-    // 6. INSERCIÓN AL DOM
-    imageGallery.innerHTML = ''; // Limpiar antes de insertar
+
+
+    // 5. MEJORA: Inserción única al DOM
+
     imageGallery.appendChild(fragment);
 
+
+
+    // Si no hay resultados, avisar al usuario
+
     if (filteredImages.length === 0 && selectedYear !== "") {
+
         imageGallery.innerHTML = '<p style="color:white; text-align:center; width:100%;">No se encontraron imágenes para esa búsqueda.</p>';
+
     }
 
+}
 function visualizarBucadores() {
     const buscador = document.getElementById('buscadorHeader');
     if(buscador) buscador.style.visibility = 'visible';
@@ -2928,6 +2970,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
