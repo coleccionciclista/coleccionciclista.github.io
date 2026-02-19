@@ -2,7 +2,7 @@ const allImagesArray = [
     //////// 2025 ////////////
     { year: 2025, bidon: "bidones\\2025\\IMG_6562.webp", equipo: "ROLAND " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6563.webp", equipo: "ROLAND CARA 2 " },
-    { year: 2025, bidon: "bidones\\02025\\IMG_6564.webp", equipo: "TEAM MEDELLIN - EPM " },
+    { year: 2025, bidon: "bidones\\2025\\IMG_6564.webp", equipo: "TEAM MEDELLIN - EPM " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6130.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6131.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 2 " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6132.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 3 " },
@@ -2924,6 +2924,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
