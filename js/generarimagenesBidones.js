@@ -1,18 +1,18 @@
 const allImagesArray = [
     //////// 2025 ////////////
-    { year: 2025, bidon: "bidones\\2025\\IMG_6562.webp", equipo: "ROLAND " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6563.webp", equipo: "ROLAND CARA 2 " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6564.webp", equipo: "TEAM MEDELLIN - EPM " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6130.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6131.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 2 " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6132.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 3 " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6133.webp", equipo: "VUELTA CICLISTA ANDALUCIA " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6134.webp", equipo: "VUELTA CICLISTA ANDALUCIA PARTE TRASERA " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6484.webp", equipo: "INTERMARCHÉ - WANTY " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6489.webp", equipo: "INTERMARCHÉ - WANTY LATERAL " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6485.webp", equipo: "XSPEED UNITED CONYINENTAL" },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6486.webp", equipo: "BAHRAIN VICTORIOUS  " },
-    { year: 2025, bidon: "bidones\\2025\\IMG_6487.webp", equipo: "BAHRAIN VICTORIOUS CARA 2  " },
+    { year: 2025, bidon: "bidones//2025//IMG_6562.webp", equipo: "ROLAND " },
+    { year: 2025, bidon: "bidones//2025//IMG_6563.webp", equipo: "ROLAND CARA 2 " },
+    { year: 2025, bidon: "bidones//02025//IMG_6564.webp", equipo: "TEAM MEDELLIN - EPM " },
+    { year: 2025, bidon: "bidones//2025//IMG_6130.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA " },
+    { year: 2025, bidon: "bidones//2025//IMG_6131.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 2 " },
+    { year: 2025, bidon: "bidones//2025//IMG_6132.webp", equipo: "EUSKALTEL EUSKADI TEAM EDICION LIMITADA DANA CARA 3 " },
+    { year: 2025, bidon: "bidones//2025//IMG_6133.webp", equipo: "VUELTA CICLISTA ANDALUCIA " },
+    { year: 2025, bidon: "bidones//2025//IMG_6134.webp", equipo: "VUELTA CICLISTA ANDALUCIA PARTE TRASERA " },
+    { year: 2025, bidon: "bidones//2025//IMG_6484.webp", equipo: "INTERMARCHÉ - WANTY " },
+    { year: 2025, bidon: "bidones//2025//IMG_6489.webp", equipo: "INTERMARCHÉ - WANTY LATERAL " },
+    { year: 2025, bidon: "bidones//2025//IMG_6485.webp", equipo: "XSPEED UNITED CONYINENTAL" },
+    { year: 2025, bidon: "bidones//2025//IMG_6486.webp", equipo: "BAHRAIN VICTORIOUS  " },
+    { year: 2025, bidon: "bidones//2025//IMG_6487.webp", equipo: "BAHRAIN VICTORIOUS CARA 2  " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6488.webp", equipo: "BAHRAIN VICTORIOUS CARA 3  " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6490.webp", equipo: "GROUPAMA - FDJ " },
     { year: 2025, bidon: "bidones\\2025\\IMG_6491.webp", equipo: "UAE Team ADQ " },
@@ -2924,6 +2924,7 @@ function visualizarBucadores() {
 zoomedContainer.addEventListener('click', () => {
     zoomedContainer.style.display = 'none';
 });
+
 
 
 
