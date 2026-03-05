@@ -16,13 +16,13 @@
     });
   </script>
     <style>
-        body {
+           body {
             margin: 0;
             padding: 0;
             background-color: black;
-            background-image: url('index/cGVn.webp');
             color: white;
             font-family: Arial, sans-serif;
+            background-image: url('index/cGVn.webp');
         }
 
         #container {
@@ -52,15 +52,15 @@
             overflow: hidden;
             text-align: center;
             cursor: pointer;
-            /* Agrega un cursor indicando que se puede halackcer clic */
+            /* Agrega un cursor indicando que se puede hacer clic */
             transition: transform 0.3s;
             /* Agrega una transición para suavizar el zoom */
             background-color: black;
         }
-     
 
         .image-card:hover {
             transform: scale(1.1);
+            background: black;
             /* Hace zoom al pasar el mouse sobre la carta */
         }
 
@@ -73,47 +73,82 @@
             background: rgba(0, 0, 0, 0.8);
             display: flex;
             justify-content: center;
-            #titulo {
-                font-size:4vh;
-            }}
-              @media (min-width: 702px) {
-            #titulo {
-                font-size:5vh;
-            }}
-         @media (max-width: 426px) {
-            #titulo {
-                font-size:3vh;
-            }}
+            align-items: center;
+            z-index: 2;
+            display: none;
+        }
 
-            .lds-roller {
-              display: inline-block;
-              position: relative;
-              width: 80px;
-              height: 80px;
-            }
-            .lds-roller div {
-              animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-              transform-origin: 40px 40px;
-            }
-            .lds-roller div:after {
-              content: " ";
-              display: block;
-              position: absolute;
-              width: 7px;
-              height: 7px;
-              border-radius: 50%;
-              background: #fff; /* Color de los puntos */
-              margin: -4px 0 0 -4px;
-            }
-            /* ... (Animación simplificada para el ejemplo) ... */
-            @keyframes lds-roller {
-              0% { transform: rotate(0deg); }
-              100% { transform: rotate(360deg); }
-            }
+        .imagencard-ocultar {
+            display: block;
+        }
 
-            #image-gallery {
-                transition: opacity 0.5s ease;
+        .zoomed img {
+            max-width: 100%;
+            max-height: 100%;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-card {
+                width: calc(50% - 10px);
             }
+        }
+
+        @media (max-width: 480px) {
+            .image-card {
+                width: 100%;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        option {
+            background-color: transparent;
+            border-color: transparent;
+            color: black;
+        }
+
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        #Siguiente {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            width: 40px;
+            background-color: rgb(68, 164, 196);
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        option {
+            background-color: black;
+            color: white;
+        }
+
+        .t-color {
+            color: green;
+        }
+
+        #buscadorHeader {
+            visibility: hidden;
+
+        }
 
     </style>
 </head>
@@ -185,3 +220,4 @@
 
 
 </html>
+
